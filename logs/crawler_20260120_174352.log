@@ -1,0 +1,1420 @@
+2026-01-20 17:43:52,216 - root - INFO - setup_logging:57 - Logging to file: logs\crawler_20260120_174352.log
+2026-01-20 17:43:52,217 - root - INFO - <module>:59 - === Web Crawler Starting ===
+2026-01-20 17:43:52,246 - root - INFO - <module>:89 - Starting with 3229 URLs in queue
+2026-01-20 17:43:52,246 - root - INFO - <module>:97 - Starting crawler main loop
+2026-01-20 17:43:52,246 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:43:52,256 - root - DEBUG - grab_next_url:25 - Loaded timing data for 120 domains
+2026-01-20 17:43:52,257 - root - DEBUG - grab_next_url:37 - Found 3229 URLs in queue
+2026-01-20 17:43:52,257 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.en.aau.dk (last crawled 402.6s ago)
+2026-01-20 17:43:52,260 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3228 remaining
+2026-01-20 17:43:52,260 - root - INFO - <module>:132 - Processing URL: https://www.en.aau.dk/education/study-engineering/engineering-programmes
+2026-01-20 17:43:52,261 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.en.aau.dk/education/study-engineering/engineering-programmes
+2026-01-20 17:43:52,262 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.en.aau.dk:443
+2026-01-20 17:43:52,395 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.en.aau.dk:443 "GET /education/study-engineering/engineering-programmes HTTP/1.1" 200 None
+2026-01-20 17:43:52,396 - root - DEBUG - <module>:150 - Successfully fetched https://www.en.aau.dk/education/study-engineering/engineering-programmes (167298 bytes)
+2026-01-20 17:43:52,852 - root - DEBUG - <module>:161 - Found 70 link elements
+2026-01-20 17:43:52,852 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.en.aau.dk
+2026-01-20 17:43:52,966 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.en.aau.dk
+2026-01-20 17:43:52,967 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.aau.dk
+2026-01-20 17:43:53,058 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.aau.dk
+2026-01-20 17:43:53,059 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.en.search.aau.dk
+2026-01-20 17:43:53,192 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.en.search.aau.dk
+2026-01-20 17:43:53,192 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.students.aau.dk
+2026-01-20 17:43:53,286 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.students.aau.dk
+2026-01-20 17:43:53,287 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.staff.aau.dk
+2026-01-20 17:43:53,397 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.staff.aau.dk
+2026-01-20 17:43:53,398 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.okonomi.aau.dk
+2026-01-20 17:43:53,533 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.okonomi.aau.dk
+2026-01-20 17:43:53,533 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.en.aub.aau.dk
+2026-01-20 17:43:53,632 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.en.aub.aau.dk
+2026-01-20 17:43:53,632 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.vacancies.aau.dk
+2026-01-20 17:43:53,730 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.vacancies.aau.dk
+2026-01-20 17:43:53,731 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.was.digst.dk
+2026-01-20 17:43:53,982 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.was.digst.dk
+2026-01-20 17:43:53,982 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.facebook.com
+2026-01-20 17:43:54,114 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.facebook.com
+2026-01-20 17:43:54,114 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:43:54,114 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/InternationalStudentsAalborgUniversity
+2026-01-20 17:43:54,114 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.instagram.com
+2026-01-20 17:43:54,351 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.instagram.com
+2026-01-20 17:43:54,351 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:43:54,351 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.youtube.com
+2026-01-20 17:43:54,506 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.youtube.com
+2026-01-20 17:43:54,507 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.linkedin.com
+2026-01-20 17:43:54,847 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.linkedin.com
+2026-01-20 17:43:54,847 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/
+2026-01-20 17:43:54,848 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.snapchat.com
+2026-01-20 17:43:54,960 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.snapchat.com
+2026-01-20 17:43:54,960 - root - INFO - <module>:172 - Extracted 62 valid links from https://www.en.aau.dk/education/study-engineering/engineering-programmes
+2026-01-20 17:43:54,960 - root - DEBUG - save_new_urls:100 - Processing 62 potential new URLs
+2026-01-20 17:43:55,007 - root - DEBUG - save_new_urls:114 - Found 2920 URLs to crawl, 324 already crawled
+2026-01-20 17:43:55,007 - root - INFO - save_new_urls:133 - Added 1 new URLs to queue
+2026-01-20 17:43:55,008 - root - DEBUG - save_new_urls:135 - Skipped 61 duplicate URLs
+2026-01-20 17:43:55,008 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:43:55,014 - root - DEBUG - grab_next_url:25 - Loaded timing data for 120 domains
+2026-01-20 17:43:55,031 - root - DEBUG - grab_next_url:37 - Found 3229 URLs in queue
+2026-01-20 17:43:55,031 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.studerende.aau.dk (last crawled 409.4s ago)
+2026-01-20 17:43:55,033 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3228 remaining
+2026-01-20 17:43:55,034 - root - INFO - <module>:132 - Processing URL: https://www.studerende.aau.dk/studieliv/trivsels-og-stottetilbud-til-dig#main
+2026-01-20 17:43:55,034 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.studerende.aau.dk/studieliv/trivsels-og-stottetilbud-til-dig#main
+2026-01-20 17:43:55,035 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.studerende.aau.dk:443
+2026-01-20 17:43:55,163 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.studerende.aau.dk:443 "GET /studieliv/trivsels-og-stottetilbud-til-dig HTTP/1.1" 200 None
+2026-01-20 17:43:55,181 - root - DEBUG - <module>:150 - Successfully fetched https://www.studerende.aau.dk/studieliv/trivsels-og-stottetilbud-til-dig#main (330040 bytes)
+2026-01-20 17:43:55,667 - root - INFO - save_page_json:114 - Saved page content to page_69.json
+2026-01-20 17:43:55,668 - root - DEBUG - <module>:161 - Found 98 link elements
+2026-01-20 17:43:55,668 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.studerende.aau.dk
+2026-01-20 17:43:55,765 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.studerende.aau.dk
+2026-01-20 17:43:55,766 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.search.aau.dk
+2026-01-20 17:43:55,869 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.search.aau.dk
+2026-01-20 17:43:55,870 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.aalborg.dk
+2026-01-20 17:43:56,007 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.aalborg.dk
+2026-01-20 17:43:56,007 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.kk.dk
+2026-01-20 17:43:56,197 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.kk.dk
+2026-01-20 17:43:56,197 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.esbjerg.dk
+2026-01-20 17:43:56,426 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.esbjerg.dk
+2026-01-20 17:43:56,426 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.ansatte.aau.dk
+2026-01-20 17:43:56,573 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.ansatte.aau.dk
+2026-01-20 17:43:56,573 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.design.aau.dk
+2026-01-20 17:43:56,880 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.design.aau.dk
+2026-01-20 17:43:56,880 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.stillinger.aau.dk
+2026-01-20 17:43:57,016 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.stillinger.aau.dk
+2026-01-20 17:43:57,016 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.aub.aau.dk
+2026-01-20 17:43:57,131 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.aub.aau.dk
+2026-01-20 17:43:57,132 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://was.digst.dk
+2026-01-20 17:43:57,171 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://was.digst.dk
+2026-01-20 17:43:57,171 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:43:57,171 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:43:57,171 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/mycompany/
+2026-01-20 17:43:57,171 - root - INFO - <module>:172 - Extracted 91 valid links from https://www.studerende.aau.dk/studieliv/trivsels-og-stottetilbud-til-dig#main
+2026-01-20 17:43:57,172 - root - DEBUG - save_new_urls:100 - Processing 91 potential new URLs
+2026-01-20 17:43:57,221 - root - DEBUG - save_new_urls:114 - Found 2921 URLs to crawl, 325 already crawled
+2026-01-20 17:43:57,221 - root - INFO - save_new_urls:133 - Added 1 new URLs to queue
+2026-01-20 17:43:57,221 - root - DEBUG - save_new_urls:135 - Skipped 90 duplicate URLs
+2026-01-20 17:43:57,222 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:43:57,229 - root - DEBUG - grab_next_url:25 - Loaded timing data for 120 domains
+2026-01-20 17:43:57,246 - root - DEBUG - grab_next_url:37 - Found 3229 URLs in queue
+2026-01-20 17:43:57,246 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.aalborg.dk (last crawled 1768927437.2s ago)
+2026-01-20 17:43:57,248 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3228 remaining
+2026-01-20 17:43:57,249 - root - INFO - <module>:132 - Processing URL: https://www.aalborg.dk/
+2026-01-20 17:43:57,249 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.aalborg.dk/
+2026-01-20 17:43:57,250 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.aalborg.dk:443
+2026-01-20 17:43:57,508 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.aalborg.dk:443 "GET / HTTP/1.1" 200 298252
+2026-01-20 17:43:57,548 - root - DEBUG - <module>:150 - Successfully fetched https://www.aalborg.dk/ (298252 bytes)
+2026-01-20 17:43:58,045 - root - INFO - save_page_json:114 - Saved page content to page_70.json
+2026-01-20 17:43:58,045 - root - DEBUG - <module>:161 - Found 54 link elements
+2026-01-20 17:43:58,045 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://fagfolk.aalborg.dk
+2026-01-20 17:43:58,279 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://fagfolk.aalborg.dk
+2026-01-20 17:43:58,279 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://facebook.com
+2026-01-20 17:43:58,481 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://facebook.com
+2026-01-20 17:43:58,482 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://facebook.com/aalborgkommune
+2026-01-20 17:43:58,482 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://instagram.com
+2026-01-20 17:43:58,889 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://instagram.com
+2026-01-20 17:43:58,889 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://instagram.com/aalborg_kommune/
+2026-01-20 17:43:58,889 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/company/aalborg-kommune
+2026-01-20 17:43:58,889 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://x.com
+2026-01-20 17:43:59,075 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://x.com
+2026-01-20 17:43:59,076 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://x.com/aalborgkommune?lang=da
+2026-01-20 17:43:59,076 - root - INFO - <module>:172 - Extracted 50 valid links from https://www.aalborg.dk/
+2026-01-20 17:43:59,076 - root - DEBUG - save_new_urls:100 - Processing 50 potential new URLs
+2026-01-20 17:43:59,124 - root - DEBUG - save_new_urls:114 - Found 2920 URLs to crawl, 326 already crawled
+2026-01-20 17:43:59,124 - root - INFO - save_new_urls:133 - Added 35 new URLs to queue
+2026-01-20 17:43:59,124 - root - DEBUG - save_new_urls:135 - Skipped 15 duplicate URLs
+2026-01-20 17:43:59,125 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:43:59,132 - root - DEBUG - grab_next_url:25 - Loaded timing data for 121 domains
+2026-01-20 17:43:59,148 - root - DEBUG - grab_next_url:37 - Found 3263 URLs in queue
+2026-01-20 17:43:59,148 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.kk.dk (last crawled 1768927439.1s ago)
+2026-01-20 17:43:59,151 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3262 remaining
+2026-01-20 17:43:59,151 - root - INFO - <module>:132 - Processing URL: https://www.kk.dk/
+2026-01-20 17:43:59,151 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.kk.dk/
+2026-01-20 17:43:59,152 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.kk.dk:443
+2026-01-20 17:43:59,217 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.kk.dk:443 "GET / HTTP/1.1" 200 None
+2026-01-20 17:43:59,235 - root - DEBUG - <module>:150 - Successfully fetched https://www.kk.dk/ (69327 bytes)
+2026-01-20 17:43:59,729 - root - INFO - save_page_json:114 - Saved page content to page_71.json
+2026-01-20 17:43:59,729 - root - DEBUG - <module>:161 - Found 41 link elements
+2026-01-20 17:43:59,730 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://international.kk.dk
+2026-01-20 17:43:59,873 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://international.kk.dk
+2026-01-20 17:43:59,873 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/koebenhavnskommune
+2026-01-20 17:43:59,874 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/company/kobenhavns-kommune/mycompany/
+2026-01-20 17:43:59,874 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/koebenhavnskommune/
+2026-01-20 17:43:59,874 - root - INFO - <module>:172 - Extracted 36 valid links from https://www.kk.dk/
+2026-01-20 17:43:59,874 - root - DEBUG - save_new_urls:100 - Processing 36 potential new URLs
+2026-01-20 17:43:59,929 - root - DEBUG - save_new_urls:114 - Found 2948 URLs to crawl, 327 already crawled
+2026-01-20 17:43:59,930 - root - INFO - save_new_urls:133 - Added 35 new URLs to queue
+2026-01-20 17:43:59,930 - root - DEBUG - save_new_urls:135 - Skipped 1 duplicate URLs
+2026-01-20 17:43:59,930 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:43:59,940 - root - DEBUG - grab_next_url:25 - Loaded timing data for 122 domains
+2026-01-20 17:43:59,966 - root - DEBUG - grab_next_url:37 - Found 3297 URLs in queue
+2026-01-20 17:43:59,966 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.aau.dk (last crawled 441.6s ago)
+2026-01-20 17:43:59,968 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3296 remaining
+2026-01-20 17:43:59,969 - root - INFO - <module>:132 - Processing URL: https://www.aau.dk/uddannelser/optagelse/kandidatreformen#main
+2026-01-20 17:43:59,969 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.aau.dk/uddannelser/optagelse/kandidatreformen#main
+2026-01-20 17:43:59,970 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.aau.dk:443
+2026-01-20 17:44:00,366 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.aau.dk:443 "GET /uddannelser/optagelse/kandidatreformen HTTP/1.1" 307 None
+2026-01-20 17:44:00,413 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.aau.dk:443 "GET /uddannelser/kandidat/nye-kandidatmuligheder HTTP/1.1" 200 None
+2026-01-20 17:44:00,431 - root - DEBUG - <module>:150 - Successfully fetched https://www.aau.dk/uddannelser/optagelse/kandidatreformen#main (266983 bytes)
+2026-01-20 17:44:00,940 - root - INFO - save_page_json:114 - Saved page content to page_72.json
+2026-01-20 17:44:00,940 - root - DEBUG - <module>:161 - Found 75 link elements
+2026-01-20 17:44:00,940 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.missioner.aau.dk
+2026-01-20 17:44:01,035 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.missioner.aau.dk
+2026-01-20 17:44:01,036 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://ufm.dk
+2026-01-20 17:44:01,096 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://ufm.dk
+2026-01-20 17:44:01,096 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:01,096 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:01,097 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/mycompany/
+2026-01-20 17:44:01,097 - root - INFO - <module>:172 - Extracted 68 valid links from https://www.aau.dk/uddannelser/optagelse/kandidatreformen#main
+2026-01-20 17:44:01,097 - root - DEBUG - save_new_urls:100 - Processing 68 potential new URLs
+2026-01-20 17:44:01,145 - root - DEBUG - save_new_urls:114 - Found 2982 URLs to crawl, 328 already crawled
+2026-01-20 17:44:01,145 - root - INFO - save_new_urls:133 - Added 1 new URLs to queue
+2026-01-20 17:44:01,145 - root - DEBUG - save_new_urls:135 - Skipped 67 duplicate URLs
+2026-01-20 17:44:01,145 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:01,152 - root - DEBUG - grab_next_url:25 - Loaded timing data for 122 domains
+2026-01-20 17:44:01,170 - root - DEBUG - grab_next_url:37 - Found 3297 URLs in queue
+2026-01-20 17:44:01,170 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.en.aau.dk (last crawled 8.9s ago)
+2026-01-20 17:44:01,173 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3296 remaining
+2026-01-20 17:44:01,173 - root - INFO - <module>:132 - Processing URL: https://www.en.aau.dk/education/apply
+2026-01-20 17:44:01,174 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.en.aau.dk/education/apply
+2026-01-20 17:44:01,174 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.en.aau.dk:443
+2026-01-20 17:44:01,300 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.en.aau.dk:443 "GET /education/apply HTTP/1.1" 200 None
+2026-01-20 17:44:01,301 - root - DEBUG - <module>:150 - Successfully fetched https://www.en.aau.dk/education/apply (191700 bytes)
+2026-01-20 17:44:01,789 - root - INFO - save_page_json:114 - Saved page content to page_73.json
+2026-01-20 17:44:01,789 - root - DEBUG - <module>:161 - Found 83 link elements
+2026-01-20 17:44:01,790 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:01,790 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/InternationalStudentsAalborgUniversity
+2026-01-20 17:44:01,790 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:01,791 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/
+2026-01-20 17:44:01,791 - root - INFO - <module>:172 - Extracted 75 valid links from https://www.en.aau.dk/education/apply
+2026-01-20 17:44:01,791 - root - DEBUG - save_new_urls:100 - Processing 75 potential new URLs
+2026-01-20 17:44:01,857 - root - DEBUG - save_new_urls:114 - Found 2982 URLs to crawl, 329 already crawled
+2026-01-20 17:44:01,858 - root - INFO - save_new_urls:133 - Added 1 new URLs to queue
+2026-01-20 17:44:01,858 - root - DEBUG - save_new_urls:135 - Skipped 74 duplicate URLs
+2026-01-20 17:44:01,858 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:01,868 - root - DEBUG - grab_next_url:25 - Loaded timing data for 122 domains
+2026-01-20 17:44:01,896 - root - DEBUG - grab_next_url:37 - Found 3297 URLs in queue
+2026-01-20 17:44:01,896 - root - DEBUG - grab_next_url:52 - Selected URL from domain ufm.dk (last crawled 1768927441.9s ago)
+2026-01-20 17:44:01,899 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3296 remaining
+2026-01-20 17:44:01,899 - root - INFO - <module>:132 - Processing URL: https://ufm.dk/uddannelse/videregaende-uddannelse/temaer/forberedt-pa-fremtiden/reform-af-universitetsuddannelserne-i-danmark
+2026-01-20 17:44:01,899 - root - DEBUG - <module>:143 - Making HTTP request to: https://ufm.dk/uddannelse/videregaende-uddannelse/temaer/forberedt-pa-fremtiden/reform-af-universitetsuddannelserne-i-danmark
+2026-01-20 17:44:01,900 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): ufm.dk:443
+2026-01-20 17:44:02,017 - urllib3.connectionpool - DEBUG - _make_request:544 - https://ufm.dk:443 "GET /uddannelse/videregaende-uddannelse/temaer/forberedt-pa-fremtiden/reform-af-universitetsuddannelserne-i-danmark HTTP/1.1" 404 None
+2026-01-20 17:44:02,034 - root - WARNING - <module>:147 - HTTP 404 for https://ufm.dk/uddannelse/videregaende-uddannelse/temaer/forberedt-pa-fremtiden/reform-af-universitetsuddannelserne-i-danmark
+2026-01-20 17:44:02,035 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:02,042 - root - DEBUG - grab_next_url:25 - Loaded timing data for 123 domains
+2026-01-20 17:44:02,060 - root - DEBUG - grab_next_url:37 - Found 3296 URLs in queue
+2026-01-20 17:44:02,061 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.studerende.aau.dk (last crawled 7.0s ago)
+2026-01-20 17:44:02,063 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3295 remaining
+2026-01-20 17:44:02,064 - root - INFO - <module>:132 - Processing URL: https://www.studerende.aau.dk/regler-og-praktisk/undervisning/aendringer-i-uddannelser/kandidatreform
+2026-01-20 17:44:02,064 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.studerende.aau.dk/regler-og-praktisk/undervisning/aendringer-i-uddannelser/kandidatreform
+2026-01-20 17:44:02,065 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.studerende.aau.dk:443
+2026-01-20 17:44:02,436 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.studerende.aau.dk:443 "GET /regler-og-praktisk/undervisning/aendringer-i-uddannelser/kandidatreform HTTP/1.1" 307 None
+2026-01-20 17:44:02,481 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.studerende.aau.dk:443 "GET /regler-og-praktisk/aendringer-i-uddannelser/kandidatreform HTTP/1.1" 200 None
+2026-01-20 17:44:02,499 - root - DEBUG - <module>:150 - Successfully fetched https://www.studerende.aau.dk/regler-og-praktisk/undervisning/aendringer-i-uddannelser/kandidatreform (199117 bytes)
+2026-01-20 17:44:03,013 - root - INFO - save_page_json:114 - Saved page content to page_74.json
+2026-01-20 17:44:03,014 - root - DEBUG - <module>:161 - Found 100 link elements
+2026-01-20 17:44:03,014 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.aaudxp-cms.aau.dk
+2026-01-20 17:44:03,119 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.aaudxp-cms.aau.dk
+2026-01-20 17:44:03,120 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:03,120 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:03,120 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/mycompany/
+2026-01-20 17:44:03,121 - root - INFO - <module>:172 - Extracted 93 valid links from https://www.studerende.aau.dk/regler-og-praktisk/undervisning/aendringer-i-uddannelser/kandidatreform
+2026-01-20 17:44:03,121 - root - DEBUG - save_new_urls:100 - Processing 93 potential new URLs
+2026-01-20 17:44:03,171 - root - DEBUG - save_new_urls:114 - Found 2981 URLs to crawl, 331 already crawled
+2026-01-20 17:44:03,171 - root - INFO - save_new_urls:133 - Added 4 new URLs to queue
+2026-01-20 17:44:03,172 - root - DEBUG - save_new_urls:135 - Skipped 89 duplicate URLs
+2026-01-20 17:44:03,172 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:03,179 - root - DEBUG - grab_next_url:25 - Loaded timing data for 123 domains
+2026-01-20 17:44:03,198 - root - DEBUG - grab_next_url:37 - Found 3299 URLs in queue
+2026-01-20 17:44:03,198 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.en.aau.dk (last crawled 2.0s ago)
+2026-01-20 17:44:03,201 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3298 remaining
+2026-01-20 17:44:03,202 - root - INFO - <module>:132 - Processing URL: https://www.en.aau.dk/education/guest-exchange#main
+2026-01-20 17:44:03,202 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.en.aau.dk/education/guest-exchange#main
+2026-01-20 17:44:03,202 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.en.aau.dk:443
+2026-01-20 17:44:03,331 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.en.aau.dk:443 "GET /education/guest-exchange HTTP/1.1" 200 None
+2026-01-20 17:44:03,349 - root - DEBUG - <module>:150 - Successfully fetched https://www.en.aau.dk/education/guest-exchange#main (224223 bytes)
+2026-01-20 17:44:03,887 - root - INFO - save_page_json:114 - Saved page content to page_75.json
+2026-01-20 17:44:03,888 - root - DEBUG - <module>:161 - Found 108 link elements
+2026-01-20 17:44:03,889 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://rn.dk
+2026-01-20 17:44:04,021 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://rn.dk
+2026-01-20 17:44:04,021 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://ifmsa.org
+2026-01-20 17:44:04,141 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://ifmsa.org
+2026-01-20 17:44:04,141 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.newstudents.aau.dk
+2026-01-20 17:44:04,235 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.newstudents.aau.dk
+2026-01-20 17:44:04,236 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:04,236 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/InternationalStudentsAalborgUniversity
+2026-01-20 17:44:04,236 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:04,236 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/
+2026-01-20 17:44:04,236 - root - INFO - <module>:172 - Extracted 90 valid links from https://www.en.aau.dk/education/guest-exchange#main
+2026-01-20 17:44:04,236 - root - DEBUG - save_new_urls:100 - Processing 90 potential new URLs
+2026-01-20 17:44:04,285 - root - DEBUG - save_new_urls:114 - Found 2983 URLs to crawl, 332 already crawled
+2026-01-20 17:44:04,285 - root - INFO - save_new_urls:133 - Added 3 new URLs to queue
+2026-01-20 17:44:04,286 - root - DEBUG - save_new_urls:135 - Skipped 87 duplicate URLs
+2026-01-20 17:44:04,286 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:04,293 - root - DEBUG - grab_next_url:25 - Loaded timing data for 123 domains
+2026-01-20 17:44:04,311 - root - DEBUG - grab_next_url:37 - Found 3301 URLs in queue
+2026-01-20 17:44:04,311 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.en.aau.dk (last crawled 1.1s ago)
+2026-01-20 17:44:04,314 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3300 remaining
+2026-01-20 17:44:04,314 - root - INFO - <module>:132 - Processing URL: https://www.en.aau.dk/education/guest-exchange/guest-and-exchange-courses-at-bachelor-s-level
+2026-01-20 17:44:04,314 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.en.aau.dk/education/guest-exchange/guest-and-exchange-courses-at-bachelor-s-level
+2026-01-20 17:44:04,315 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.en.aau.dk:443
+2026-01-20 17:44:04,448 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.en.aau.dk:443 "GET /education/guest-exchange/guest-and-exchange-courses-at-bachelor-s-level HTTP/1.1" 200 None
+2026-01-20 17:44:04,449 - root - DEBUG - <module>:150 - Successfully fetched https://www.en.aau.dk/education/guest-exchange/guest-and-exchange-courses-at-bachelor-s-level (204459 bytes)
+2026-01-20 17:44:04,951 - root - INFO - save_page_json:114 - Saved page content to page_76.json
+2026-01-20 17:44:04,952 - root - DEBUG - <module>:161 - Found 84 link elements
+2026-01-20 17:44:04,953 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:04,953 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/InternationalStudentsAalborgUniversity
+2026-01-20 17:44:04,953 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:04,953 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/
+2026-01-20 17:44:04,954 - root - INFO - <module>:172 - Extracted 66 valid links from https://www.en.aau.dk/education/guest-exchange/guest-and-exchange-courses-at-bachelor-s-level
+2026-01-20 17:44:04,954 - root - DEBUG - save_new_urls:100 - Processing 66 potential new URLs
+2026-01-20 17:44:05,021 - root - DEBUG - save_new_urls:114 - Found 2983 URLs to crawl, 333 already crawled
+2026-01-20 17:44:05,021 - root - INFO - save_new_urls:133 - Added 2 new URLs to queue
+2026-01-20 17:44:05,021 - root - DEBUG - save_new_urls:135 - Skipped 64 duplicate URLs
+2026-01-20 17:44:05,022 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:05,031 - root - DEBUG - grab_next_url:25 - Loaded timing data for 123 domains
+2026-01-20 17:44:05,058 - root - DEBUG - grab_next_url:37 - Found 3302 URLs in queue
+2026-01-20 17:44:05,058 - root - DEBUG - grab_next_url:57 - Rate limiting www.en.aau.dk: only 0.7s since last crawl
+2026-01-20 17:44:05,059 - root - DEBUG - grab_next_url:57 - Rate limiting www.en.aau.dk: only 0.7s since last crawl
+2026-01-20 17:44:05,059 - root - DEBUG - grab_next_url:57 - Rate limiting www.en.aau.dk: only 0.7s since last crawl
+2026-01-20 17:44:05,059 - root - DEBUG - grab_next_url:52 - Selected URL from domain rn.dk (last crawled 1768927445.1s ago)
+2026-01-20 17:44:05,061 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3301 remaining
+2026-01-20 17:44:05,062 - root - INFO - <module>:132 - Processing URL: https://rn.dk/service/english/health-care
+2026-01-20 17:44:05,062 - root - DEBUG - <module>:143 - Making HTTP request to: https://rn.dk/service/english/health-care
+2026-01-20 17:44:05,063 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): rn.dk:443
+2026-01-20 17:44:05,156 - urllib3.connectionpool - DEBUG - _make_request:544 - https://rn.dk:443 "GET /service/english/health-care HTTP/1.1" 302 None
+2026-01-20 17:44:05,189 - urllib3.connectionpool - DEBUG - _make_request:544 - https://rn.dk:443 "GET /Forside/Fejl/404?item=%2Fservice%2Fenglish%2Fhealth-care&user=extranet%5CAnonymous&site=website HTTP/1.1" 404 None
+2026-01-20 17:44:05,202 - root - WARNING - <module>:147 - HTTP 404 for https://rn.dk/service/english/health-care
+2026-01-20 17:44:05,202 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:05,209 - root - DEBUG - grab_next_url:25 - Loaded timing data for 124 domains
+2026-01-20 17:44:05,227 - root - DEBUG - grab_next_url:37 - Found 3301 URLs in queue
+2026-01-20 17:44:05,227 - root - DEBUG - grab_next_url:57 - Rate limiting www.en.aau.dk: only 0.9s since last crawl
+2026-01-20 17:44:05,227 - root - DEBUG - grab_next_url:57 - Rate limiting www.en.aau.dk: only 0.9s since last crawl
+2026-01-20 17:44:05,228 - root - DEBUG - grab_next_url:57 - Rate limiting www.en.aau.dk: only 0.9s since last crawl
+2026-01-20 17:44:05,228 - root - DEBUG - grab_next_url:52 - Selected URL from domain ifmsa.org (last crawled 1768927445.2s ago)
+2026-01-20 17:44:05,230 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3300 remaining
+2026-01-20 17:44:05,231 - root - INFO - <module>:132 - Processing URL: https://ifmsa.org/student-exchange-program/
+2026-01-20 17:44:05,231 - root - DEBUG - <module>:143 - Making HTTP request to: https://ifmsa.org/student-exchange-program/
+2026-01-20 17:44:05,232 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): ifmsa.org:443
+2026-01-20 17:44:05,943 - urllib3.connectionpool - DEBUG - _make_request:544 - https://ifmsa.org:443 "GET /student-exchange-program/ HTTP/1.1" 403 None
+2026-01-20 17:44:05,943 - root - WARNING - <module>:147 - HTTP 403 for https://ifmsa.org/student-exchange-program/
+2026-01-20 17:44:05,943 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:05,950 - root - DEBUG - grab_next_url:25 - Loaded timing data for 125 domains
+2026-01-20 17:44:05,968 - root - DEBUG - grab_next_url:37 - Found 3300 URLs in queue
+2026-01-20 17:44:05,969 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.en.aau.dk (last crawled 1.7s ago)
+2026-01-20 17:44:05,971 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3299 remaining
+2026-01-20 17:44:05,972 - root - INFO - <module>:132 - Processing URL: https://www.en.aau.dk/education/guest-exchange/guest-and-exchange-courses-at-master-s-level
+2026-01-20 17:44:05,972 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.en.aau.dk/education/guest-exchange/guest-and-exchange-courses-at-master-s-level
+2026-01-20 17:44:05,973 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.en.aau.dk:443
+2026-01-20 17:44:06,146 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.en.aau.dk:443 "GET /education/guest-exchange/guest-and-exchange-courses-at-master-s-level HTTP/1.1" 200 None
+2026-01-20 17:44:06,165 - root - DEBUG - <module>:150 - Successfully fetched https://www.en.aau.dk/education/guest-exchange/guest-and-exchange-courses-at-master-s-level (261858 bytes)
+2026-01-20 17:44:07,983 - root - DEBUG - <module>:161 - Found 84 link elements
+2026-01-20 17:44:07,984 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:07,985 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/InternationalStudentsAalborgUniversity
+2026-01-20 17:44:07,985 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:07,985 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/
+2026-01-20 17:44:07,985 - root - INFO - <module>:172 - Extracted 66 valid links from https://www.en.aau.dk/education/guest-exchange/guest-and-exchange-courses-at-master-s-level
+2026-01-20 17:44:07,985 - root - DEBUG - save_new_urls:100 - Processing 66 potential new URLs
+2026-01-20 17:44:08,064 - root - DEBUG - save_new_urls:114 - Found 2981 URLs to crawl, 336 already crawled
+2026-01-20 17:44:08,065 - root - INFO - save_new_urls:133 - Added 2 new URLs to queue
+2026-01-20 17:44:08,065 - root - DEBUG - save_new_urls:135 - Skipped 64 duplicate URLs
+2026-01-20 17:44:08,065 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:08,075 - root - DEBUG - grab_next_url:25 - Loaded timing data for 125 domains
+2026-01-20 17:44:08,098 - root - DEBUG - grab_next_url:37 - Found 3301 URLs in queue
+2026-01-20 17:44:08,099 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.en.aau.dk (last crawled 2.1s ago)
+2026-01-20 17:44:08,101 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3300 remaining
+2026-01-20 17:44:08,103 - root - INFO - <module>:132 - Processing URL: https://www.en.aau.dk/education/guest-exchange/nordlys-nordplus-exchange-courses
+2026-01-20 17:44:08,103 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.en.aau.dk/education/guest-exchange/nordlys-nordplus-exchange-courses
+2026-01-20 17:44:08,104 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.en.aau.dk:443
+2026-01-20 17:44:08,232 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.en.aau.dk:443 "GET /education/guest-exchange/nordlys-nordplus-exchange-courses HTTP/1.1" 200 None
+2026-01-20 17:44:08,233 - root - DEBUG - <module>:150 - Successfully fetched https://www.en.aau.dk/education/guest-exchange/nordlys-nordplus-exchange-courses (183145 bytes)
+2026-01-20 17:44:08,940 - root - INFO - save_page_json:114 - Saved page content to page_77.json
+2026-01-20 17:44:08,941 - root - DEBUG - <module>:161 - Found 84 link elements
+2026-01-20 17:44:08,941 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:08,942 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/InternationalStudentsAalborgUniversity
+2026-01-20 17:44:08,942 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:08,942 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/
+2026-01-20 17:44:08,942 - root - INFO - <module>:172 - Extracted 66 valid links from https://www.en.aau.dk/education/guest-exchange/nordlys-nordplus-exchange-courses
+2026-01-20 17:44:08,942 - root - DEBUG - save_new_urls:100 - Processing 66 potential new URLs
+2026-01-20 17:44:09,120 - root - DEBUG - save_new_urls:114 - Found 2981 URLs to crawl, 337 already crawled
+2026-01-20 17:44:09,120 - root - INFO - save_new_urls:133 - Added 2 new URLs to queue
+2026-01-20 17:44:09,120 - root - DEBUG - save_new_urls:135 - Skipped 64 duplicate URLs
+2026-01-20 17:44:09,121 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:09,147 - root - DEBUG - grab_next_url:25 - Loaded timing data for 125 domains
+2026-01-20 17:44:09,187 - root - DEBUG - grab_next_url:37 - Found 3302 URLs in queue
+2026-01-20 17:44:09,187 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.en.aau.dk (last crawled 1.1s ago)
+2026-01-20 17:44:09,190 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3301 remaining
+2026-01-20 17:44:09,191 - root - INFO - <module>:132 - Processing URL: https://www.en.aau.dk/education/apply/exchange
+2026-01-20 17:44:09,191 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.en.aau.dk/education/apply/exchange
+2026-01-20 17:44:09,191 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.en.aau.dk:443
+2026-01-20 17:44:09,314 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.en.aau.dk:443 "GET /education/apply/exchange HTTP/1.1" 200 None
+2026-01-20 17:44:09,332 - root - DEBUG - <module>:150 - Successfully fetched https://www.en.aau.dk/education/apply/exchange (361649 bytes)
+2026-01-20 17:44:09,964 - root - INFO - save_page_json:114 - Saved page content to page_78.json
+2026-01-20 17:44:09,964 - root - DEBUG - <module>:161 - Found 169 link elements
+2026-01-20 17:44:09,965 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.service4mobility.com
+2026-01-20 17:44:10,166 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.service4mobility.com
+2026-01-20 17:44:10,166 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.service4mobility.com/europe/BewerbungServlet?identifier=ALBORG01&kz_bew_pers=S&kz_bew_art=IN&sprache=en&aust_prog_id_intern=9107&application_intern=1
+2026-01-20 17:44:10,167 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.pbl.aau.dk
+2026-01-20 17:44:10,232 - root - WARNING - can_fetch:43 - Could not read robots.txt for https://www.pbl.aau.dk: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-01-20 17:44:10,232 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://studieordninger.aau.dk
+2026-01-20 17:44:10,868 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://studieordninger.aau.dk
+2026-01-20 17:44:10,868 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.ielts.org
+2026-01-20 17:44:10,996 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.ielts.org
+2026-01-20 17:44:10,996 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.ielts.org/
+2026-01-20 17:44:10,996 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.ets.org
+2026-01-20 17:44:11,524 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.ets.org
+2026-01-20 17:44:11,524 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.cambridgeenglish.org
+2026-01-20 17:44:12,035 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.cambridgeenglish.org
+2026-01-20 17:44:12,036 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://michiganassessment.org
+2026-01-20 17:44:12,116 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://michiganassessment.org
+2026-01-20 17:44:12,116 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://englishtest.duolingo.com
+2026-01-20 17:44:12,614 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://englishtest.duolingo.com
+2026-01-20 17:44:12,614 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://clients.mapsindoors.com
+2026-01-20 17:44:12,804 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://clients.mapsindoors.com
+2026-01-20 17:44:12,804 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.en.campusservice.aau.dk
+2026-01-20 17:44:12,937 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.en.campusservice.aau.dk
+2026-01-20 17:44:12,937 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://lifeindenmark.borger.dk
+2026-01-20 17:44:12,990 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://lifeindenmark.borger.dk
+2026-01-20 17:44:12,990 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.nyidanmark.dk
+2026-01-20 17:44:13,193 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.nyidanmark.dk
+2026-01-20 17:44:13,193 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.service4mobility.com/europe/BewerbungServlet?identifier=ALBORG01&kz_bew_pers=S&kz_bew_art=IN&aust_prog=FMPG&sprache=en
+2026-01-20 17:44:13,194 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://academy.europa.eu
+2026-01-20 17:44:13,492 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://academy.europa.eu
+2026-01-20 17:44:13,492 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://academy.europa.eu/local/euacademy/pages/course/community-overview.php?title=learn-danish-with-ols
+2026-01-20 17:44:13,492 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://youtu.be
+2026-01-20 17:44:13,590 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://youtu.be
+2026-01-20 17:44:13,590 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.preparedness.aau.dk
+2026-01-20 17:44:13,788 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.preparedness.aau.dk
+2026-01-20 17:44:13,788 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://reservation.frontdesksuite.com
+2026-01-20 17:44:13,920 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://reservation.frontdesksuite.com
+2026-01-20 17:44:13,920 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/InternationalStudentsAalborgUniversity/
+2026-01-20 17:44:13,920 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://m.facebook.com
+2026-01-20 17:44:14,201 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://m.facebook.com
+2026-01-20 17:44:14,202 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://m.facebook.com/BuddyAAU/
+2026-01-20 17:44:14,202 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://instagram.com/buddynetwork_aau?igshid=YmMyMTA2M2Y=
+2026-01-20 17:44:14,202 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/InternationalStudentsAalborgUniversity/
+2026-01-20 17:44:14,202 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://m.facebook.com/BuddyAAU/
+2026-01-20 17:44:14,202 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://instagram.com/buddynetwork_aau?igshid=YmMyMTA2M2Y=
+2026-01-20 17:44:14,203 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:14,203 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/InternationalStudentsAalborgUniversity
+2026-01-20 17:44:14,203 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:14,203 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/
+2026-01-20 17:44:14,203 - root - INFO - <module>:172 - Extracted 120 valid links from https://www.en.aau.dk/education/apply/exchange
+2026-01-20 17:44:14,203 - root - DEBUG - save_new_urls:100 - Processing 120 potential new URLs
+2026-01-20 17:44:14,253 - root - DEBUG - save_new_urls:114 - Found 2982 URLs to crawl, 338 already crawled
+2026-01-20 17:44:14,253 - root - INFO - save_new_urls:133 - Added 29 new URLs to queue
+2026-01-20 17:44:14,253 - root - DEBUG - save_new_urls:135 - Skipped 91 duplicate URLs
+2026-01-20 17:44:14,254 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:14,261 - root - DEBUG - grab_next_url:25 - Loaded timing data for 125 domains
+2026-01-20 17:44:14,278 - root - DEBUG - grab_next_url:37 - Found 3330 URLs in queue
+2026-01-20 17:44:14,279 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.en.aau.dk (last crawled 5.1s ago)
+2026-01-20 17:44:14,281 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3329 remaining
+2026-01-20 17:44:14,282 - root - INFO - <module>:132 - Processing URL: https://www.en.aau.dk/about-aau/organisation/study-boards
+2026-01-20 17:44:14,282 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.en.aau.dk/about-aau/organisation/study-boards
+2026-01-20 17:44:14,283 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.en.aau.dk:443
+2026-01-20 17:44:14,403 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.en.aau.dk:443 "GET /about-aau/organisation/study-boards HTTP/1.1" 200 None
+2026-01-20 17:44:14,404 - root - DEBUG - <module>:150 - Successfully fetched https://www.en.aau.dk/about-aau/organisation/study-boards (198624 bytes)
+2026-01-20 17:44:14,908 - root - INFO - save_page_json:114 - Saved page content to page_79.json
+2026-01-20 17:44:14,908 - root - DEBUG - <module>:161 - Found 126 link elements
+2026-01-20 17:44:14,909 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://vbn.aau.dk
+2026-01-20 17:44:15,029 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://vbn.aau.dk
+2026-01-20 17:44:15,029 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/da/persons/137170
+2026-01-20 17:44:15,029 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.en.create.aau.dk
+2026-01-20 17:44:15,217 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.en.create.aau.dk
+2026-01-20 17:44:15,217 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/da/persons/106251
+2026-01-20 17:44:15,218 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.en.build.aau.dk
+2026-01-20 17:44:15,411 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.en.build.aau.dk
+2026-01-20 17:44:15,411 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/da/persons/103483
+2026-01-20 17:44:15,412 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.bio.aau.dk
+2026-01-20 17:44:15,509 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.bio.aau.dk
+2026-01-20 17:44:15,510 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/mph
+2026-01-20 17:44:15,510 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.klinisk.aau.dk
+2026-01-20 17:44:15,655 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.klinisk.aau.dk
+2026-01-20 17:44:15,655 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/da/persons/106477
+2026-01-20 17:44:15,655 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.ikk.aau.dk
+2026-01-20 17:44:15,751 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.ikk.aau.dk
+2026-01-20 17:44:15,751 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.kommunikation.aau.dk
+2026-01-20 17:44:15,963 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.kommunikation.aau.dk
+2026-01-20 17:44:15,963 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/110550
+2026-01-20 17:44:15,964 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.cs.aau.dk
+2026-01-20 17:44:16,064 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.cs.aau.dk
+2026-01-20 17:44:16,064 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/da/persons/ove-kjeld-andersen
+2026-01-20 17:44:16,064 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.es.aau.dk
+2026-01-20 17:44:16,158 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.es.aau.dk
+2026-01-20 17:44:16,158 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/da/persons/106838
+2026-01-20 17:44:16,158 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.energy.aau.dk
+2026-01-20 17:44:16,293 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.energy.aau.dk
+2026-01-20 17:44:16,293 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/saba
+2026-01-20 17:44:16,293 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/mph
+2026-01-20 17:44:16,294 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.hst.aau.dk
+2026-01-20 17:44:16,399 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.hst.aau.dk
+2026-01-20 17:44:16,399 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/107062
+2026-01-20 17:44:16,399 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.law.aau.dk
+2026-01-20 17:44:16,488 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.law.aau.dk
+2026-01-20 17:44:16,488 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/da/persons/103350
+2026-01-20 17:44:16,488 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.mp.aau.dk
+2026-01-20 17:44:16,582 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.mp.aau.dk
+2026-01-20 17:44:16,583 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/da/persons/129224
+2026-01-20 17:44:16,583 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.math.aau.dk
+2026-01-20 17:44:16,681 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.math.aau.dk
+2026-01-20 17:44:16,681 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/da/persons/kristianb/
+2026-01-20 17:44:16,681 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.en.plan.aau.dk
+2026-01-20 17:44:16,873 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.en.plan.aau.dk
+2026-01-20 17:44:16,873 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/ane-bislev
+2026-01-20 17:44:16,874 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.politik-samfund.aau.dk
+2026-01-20 17:44:16,970 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.politik-samfund.aau.dk
+2026-01-20 17:44:16,970 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.en.society.aau.dk
+2026-01-20 17:44:17,158 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.en.society.aau.dk
+2026-01-20 17:44:17,158 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/da/persons/111953
+2026-01-20 17:44:17,158 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.business.aau.dk
+2026-01-20 17:44:17,254 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.business.aau.dk
+2026-01-20 17:44:17,254 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:17,254 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/InternationalStudentsAalborgUniversity
+2026-01-20 17:44:17,254 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:17,255 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/
+2026-01-20 17:44:17,255 - root - INFO - <module>:172 - Extracted 101 valid links from https://www.en.aau.dk/about-aau/organisation/study-boards
+2026-01-20 17:44:17,255 - root - DEBUG - save_new_urls:100 - Processing 101 potential new URLs
+2026-01-20 17:44:17,302 - root - DEBUG - save_new_urls:114 - Found 3002 URLs to crawl, 339 already crawled
+2026-01-20 17:44:17,302 - root - INFO - save_new_urls:133 - Added 14 new URLs to queue
+2026-01-20 17:44:17,303 - root - DEBUG - save_new_urls:135 - Skipped 87 duplicate URLs
+2026-01-20 17:44:17,303 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:17,310 - root - DEBUG - grab_next_url:25 - Loaded timing data for 125 domains
+2026-01-20 17:44:17,326 - root - DEBUG - grab_next_url:37 - Found 3343 URLs in queue
+2026-01-20 17:44:17,327 - root - DEBUG - grab_next_url:52 - Selected URL from domain rn.dk (last crawled 12.3s ago)
+2026-01-20 17:44:17,329 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3342 remaining
+2026-01-20 17:44:17,330 - root - INFO - <module>:132 - Processing URL: https://rn.dk/kbu-udenlandsk-uddannet-l%C3%A6ge
+2026-01-20 17:44:17,330 - root - DEBUG - <module>:143 - Making HTTP request to: https://rn.dk/kbu-udenlandsk-uddannet-l%C3%A6ge
+2026-01-20 17:44:17,331 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): rn.dk:443
+2026-01-20 17:44:17,444 - urllib3.connectionpool - DEBUG - _make_request:544 - https://rn.dk:443 "GET /kbu-udenlandsk-uddannet-l%C3%A6ge HTTP/1.1" 200 None
+2026-01-20 17:44:17,471 - root - DEBUG - <module>:150 - Successfully fetched https://rn.dk/kbu-udenlandsk-uddannet-l%C3%A6ge (86833 bytes)
+2026-01-20 17:44:17,991 - root - INFO - save_page_json:114 - Saved page content to page_80.json
+2026-01-20 17:44:17,992 - root - DEBUG - <module>:161 - Found 90 link elements
+2026-01-20 17:44:17,993 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2frn.dk%2fJob-og-uddannelse%2fLaege%2fUddannelseslaege%2fDin-uddannelse%2fKBU-udenlandsk-uddannede-laeger
+2026-01-20 17:44:17,993 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/feed/?shareActive=true&text=KBU for udenlandsk uddannede læger:%0D%0Ahttps%3a%2f%2frn.dk%2fJob-og-uddannelse%2fLaege%2fUddannelseslaege%2fDin-uddannelse%2fKBU-udenlandsk-uddannede-laeger 
+2026-01-20 17:44:17,993 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://twitter.com
+2026-01-20 17:44:18,178 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://twitter.com
+2026-01-20 17:44:18,178 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://twitter.com/intent/tweet?source=https%3a%2f%2frn.dk%2fJob-og-uddannelse%2fLaege%2fUddannelseslaege%2fDin-uddannelse%2fKBU-udenlandsk-uddannede-laeger&text=KBU for udenlandsk uddannede læger:https%3a%2f%2frn.dk%2fJob-og-uddannelse%2fLaege%2fUddannelseslaege%2fDin-uddannelse%2fKBU-udenlandsk-uddannede-laeger
+2026-01-20 17:44:18,178 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://rn.emply.net
+2026-01-20 17:44:18,367 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://rn.emply.net
+2026-01-20 17:44:18,367 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://stps.dk
+2026-01-20 17:44:18,579 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://stps.dk
+2026-01-20 17:44:18,579 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://aalborguh.rn.dk
+2026-01-20 17:44:18,698 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://aalborguh.rn.dk
+2026-01-20 17:44:18,698 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: http://rhnordjylland.rn.dk
+2026-01-20 17:44:19,853 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for http://rhnordjylland.rn.dk
+2026-01-20 17:44:19,853 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.videreuddannelsen-nord.dk
+2026-01-20 17:44:20,052 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.videreuddannelsen-nord.dk
+2026-01-20 17:44:20,052 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: http://www.facebook.com
+2026-01-20 17:44:20,165 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for http://www.facebook.com
+2026-01-20 17:44:20,165 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: http://www.facebook.com/regionnordjylland
+2026-01-20 17:44:20,165 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: http://www.linkedin.com
+2026-01-20 17:44:20,658 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for http://www.linkedin.com
+2026-01-20 17:44:20,659 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: http://www.linkedin.com/company/regionnordjylland
+2026-01-20 17:44:20,659 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://instagram.com/regionnordjylland/
+2026-01-20 17:44:20,659 - root - INFO - <module>:172 - Extracted 76 valid links from https://rn.dk/kbu-udenlandsk-uddannet-l%C3%A6ge
+2026-01-20 17:44:20,659 - root - DEBUG - save_new_urls:100 - Processing 76 potential new URLs
+2026-01-20 17:44:20,707 - root - DEBUG - save_new_urls:114 - Found 3015 URLs to crawl, 340 already crawled
+2026-01-20 17:44:20,707 - root - INFO - save_new_urls:133 - Added 55 new URLs to queue
+2026-01-20 17:44:20,707 - root - DEBUG - save_new_urls:135 - Skipped 21 duplicate URLs
+2026-01-20 17:44:20,707 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:20,714 - root - DEBUG - grab_next_url:25 - Loaded timing data for 125 domains
+2026-01-20 17:44:20,731 - root - DEBUG - grab_next_url:37 - Found 3397 URLs in queue
+2026-01-20 17:44:20,731 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.en.aau.dk (last crawled 6.5s ago)
+2026-01-20 17:44:20,733 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3396 remaining
+2026-01-20 17:44:20,734 - root - INFO - <module>:132 - Processing URL: https://www.en.aau.dk/about-aau/contact#international-office-for-students
+2026-01-20 17:44:20,734 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.en.aau.dk/about-aau/contact#international-office-for-students
+2026-01-20 17:44:20,735 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.en.aau.dk:443
+2026-01-20 17:44:20,856 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.en.aau.dk:443 "GET /about-aau/contact HTTP/1.1" 200 None
+2026-01-20 17:44:20,857 - root - DEBUG - <module>:150 - Successfully fetched https://www.en.aau.dk/about-aau/contact#international-office-for-students (197020 bytes)
+2026-01-20 17:44:21,357 - root - INFO - save_page_json:114 - Saved page content to page_81.json
+2026-01-20 17:44:21,357 - root - DEBUG - <module>:161 - Found 105 link elements
+2026-01-20 17:44:21,357 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.en.esbjerg.aau.dk
+2026-01-20 17:44:21,417 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.en.esbjerg.aau.dk
+2026-01-20 17:44:21,417 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.en.cph.aau.dk
+2026-01-20 17:44:21,649 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.en.cph.aau.dk
+2026-01-20 17:44:21,650 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://sdc.university
+2026-01-20 17:44:21,805 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://sdc.university
+2026-01-20 17:44:21,805 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://nyidanmark.dk
+2026-01-20 17:44:21,964 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://nyidanmark.dk
+2026-01-20 17:44:21,964 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.en.aus.aau.dk
+2026-01-20 17:44:22,151 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.en.aus.aau.dk
+2026-01-20 17:44:22,152 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.isu.aau.dk
+2026-01-20 17:44:22,472 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.isu.aau.dk
+2026-01-20 17:44:22,472 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: http://www.studieordninger.aau.dk
+2026-01-20 17:44:22,617 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for http://www.studieordninger.aau.dk
+2026-01-20 17:44:22,617 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:22,618 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/InternationalStudentsAalborgUniversity
+2026-01-20 17:44:22,618 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:22,618 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/
+2026-01-20 17:44:22,618 - root - INFO - <module>:172 - Extracted 88 valid links from https://www.en.aau.dk/about-aau/contact#international-office-for-students
+2026-01-20 17:44:22,619 - root - DEBUG - save_new_urls:100 - Processing 88 potential new URLs
+2026-01-20 17:44:22,666 - root - DEBUG - save_new_urls:114 - Found 3070 URLs to crawl, 341 already crawled
+2026-01-20 17:44:22,667 - root - INFO - save_new_urls:133 - Added 9 new URLs to queue
+2026-01-20 17:44:22,667 - root - DEBUG - save_new_urls:135 - Skipped 79 duplicate URLs
+2026-01-20 17:44:22,667 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:22,673 - root - DEBUG - grab_next_url:25 - Loaded timing data for 125 domains
+2026-01-20 17:44:22,689 - root - DEBUG - grab_next_url:37 - Found 3405 URLs in queue
+2026-01-20 17:44:22,689 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.en.aau.dk (last crawled 2.0s ago)
+2026-01-20 17:44:22,691 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3404 remaining
+2026-01-20 17:44:22,692 - root - INFO - <module>:132 - Processing URL: https://www.en.aau.dk/about-aau/contact#main
+2026-01-20 17:44:22,692 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.en.aau.dk/about-aau/contact#main
+2026-01-20 17:44:22,693 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.en.aau.dk:443
+2026-01-20 17:44:22,822 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.en.aau.dk:443 "GET /about-aau/contact HTTP/1.1" 200 None
+2026-01-20 17:44:22,823 - root - DEBUG - <module>:150 - Successfully fetched https://www.en.aau.dk/about-aau/contact#main (197020 bytes)
+2026-01-20 17:44:23,327 - root - DEBUG - <module>:161 - Found 105 link elements
+2026-01-20 17:44:23,329 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:23,329 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/InternationalStudentsAalborgUniversity
+2026-01-20 17:44:23,329 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:23,329 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/
+2026-01-20 17:44:23,329 - root - INFO - <module>:172 - Extracted 88 valid links from https://www.en.aau.dk/about-aau/contact#main
+2026-01-20 17:44:23,329 - root - DEBUG - save_new_urls:100 - Processing 88 potential new URLs
+2026-01-20 17:44:23,390 - root - DEBUG - save_new_urls:114 - Found 3077 URLs to crawl, 341 already crawled
+2026-01-20 17:44:23,391 - root - INFO - save_new_urls:133 - Added 2 new URLs to queue
+2026-01-20 17:44:23,391 - root - DEBUG - save_new_urls:135 - Skipped 86 duplicate URLs
+2026-01-20 17:44:23,391 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:23,402 - root - DEBUG - grab_next_url:25 - Loaded timing data for 125 domains
+2026-01-20 17:44:23,428 - root - DEBUG - grab_next_url:37 - Found 3406 URLs in queue
+2026-01-20 17:44:23,428 - root - DEBUG - grab_next_url:57 - Rate limiting www.en.aau.dk: only 0.7s since last crawl
+2026-01-20 17:44:23,429 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.newstudents.aau.dk (last crawled 1228.2s ago)
+2026-01-20 17:44:23,431 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3405 remaining
+2026-01-20 17:44:23,432 - root - INFO - <module>:132 - Processing URL: https://www.newstudents.aau.dk/masters-aalborg/information/arrival-welcome/
+2026-01-20 17:44:23,432 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.newstudents.aau.dk/masters-aalborg/information/arrival-welcome/
+2026-01-20 17:44:23,432 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.newstudents.aau.dk:443
+2026-01-20 17:44:23,536 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.newstudents.aau.dk:443 "GET /masters-aalborg/information/arrival-welcome/ HTTP/1.1" 308 None
+2026-01-20 17:44:23,873 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.newstudents.aau.dk:443 "GET /masters-aalborg/information/arrival-welcome HTTP/1.1" 404 None
+2026-01-20 17:44:23,874 - root - WARNING - <module>:147 - HTTP 404 for https://www.newstudents.aau.dk/masters-aalborg/information/arrival-welcome/
+2026-01-20 17:44:23,874 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:23,882 - root - DEBUG - grab_next_url:25 - Loaded timing data for 125 domains
+2026-01-20 17:44:23,897 - root - DEBUG - grab_next_url:37 - Found 3405 URLs in queue
+2026-01-20 17:44:23,898 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.en.aau.dk (last crawled 1.2s ago)
+2026-01-20 17:44:23,900 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3404 remaining
+2026-01-20 17:44:23,901 - root - INFO - <module>:132 - Processing URL: https://www.en.aau.dk/education/student-guidance
+2026-01-20 17:44:23,901 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.en.aau.dk/education/student-guidance
+2026-01-20 17:44:23,901 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.en.aau.dk:443
+2026-01-20 17:44:24,060 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.en.aau.dk:443 "GET /education/student-guidance HTTP/1.1" 200 None
+2026-01-20 17:44:24,061 - root - DEBUG - <module>:150 - Successfully fetched https://www.en.aau.dk/education/student-guidance (173130 bytes)
+2026-01-20 17:44:24,537 - root - INFO - save_page_json:114 - Saved page content to page_82.json
+2026-01-20 17:44:24,537 - root - DEBUG - <module>:161 - Found 72 link elements
+2026-01-20 17:44:24,538 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:24,538 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/InternationalStudentsAalborgUniversity
+2026-01-20 17:44:24,538 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:24,539 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/
+2026-01-20 17:44:24,539 - root - INFO - <module>:172 - Extracted 64 valid links from https://www.en.aau.dk/education/student-guidance
+2026-01-20 17:44:24,539 - root - DEBUG - save_new_urls:100 - Processing 64 potential new URLs
+2026-01-20 17:44:24,607 - root - DEBUG - save_new_urls:114 - Found 3075 URLs to crawl, 343 already crawled
+2026-01-20 17:44:24,607 - root - INFO - save_new_urls:133 - Added 3 new URLs to queue
+2026-01-20 17:44:24,607 - root - DEBUG - save_new_urls:135 - Skipped 61 duplicate URLs
+2026-01-20 17:44:24,608 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:24,616 - root - DEBUG - grab_next_url:25 - Loaded timing data for 125 domains
+2026-01-20 17:44:24,641 - root - DEBUG - grab_next_url:37 - Found 3407 URLs in queue
+2026-01-20 17:44:24,641 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.newstudents.aau.dk (last crawled 1.2s ago)
+2026-01-20 17:44:24,644 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3406 remaining
+2026-01-20 17:44:24,645 - root - INFO - <module>:132 - Processing URL: https://www.newstudents.aau.dk/master#arrival-and-welcome---aalborg
+2026-01-20 17:44:24,645 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.newstudents.aau.dk/master#arrival-and-welcome---aalborg
+2026-01-20 17:44:24,645 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.newstudents.aau.dk:443
+2026-01-20 17:44:24,790 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.newstudents.aau.dk:443 "GET /master HTTP/1.1" 200 None
+2026-01-20 17:44:24,808 - root - DEBUG - <module>:150 - Successfully fetched https://www.newstudents.aau.dk/master#arrival-and-welcome---aalborg (200128 bytes)
+2026-01-20 17:44:25,301 - root - INFO - save_page_json:114 - Saved page content to page_83.json
+2026-01-20 17:44:25,301 - root - DEBUG - <module>:161 - Found 48 link elements
+2026-01-20 17:44:25,301 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.studiestart.aau.dk
+2026-01-20 17:44:25,435 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.studiestart.aau.dk
+2026-01-20 17:44:25,436 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:25,436 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/InternationalStudentsAalborgUniversity
+2026-01-20 17:44:25,436 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:25,436 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/
+2026-01-20 17:44:25,436 - root - INFO - <module>:172 - Extracted 40 valid links from https://www.newstudents.aau.dk/master#arrival-and-welcome---aalborg
+2026-01-20 17:44:25,436 - root - DEBUG - save_new_urls:100 - Processing 40 potential new URLs
+2026-01-20 17:44:25,482 - root - DEBUG - save_new_urls:114 - Found 3078 URLs to crawl, 343 already crawled
+2026-01-20 17:44:25,483 - root - INFO - save_new_urls:133 - Added 1 new URLs to queue
+2026-01-20 17:44:25,483 - root - DEBUG - save_new_urls:135 - Skipped 39 duplicate URLs
+2026-01-20 17:44:25,483 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:25,489 - root - DEBUG - grab_next_url:25 - Loaded timing data for 125 domains
+2026-01-20 17:44:25,505 - root - DEBUG - grab_next_url:37 - Found 3407 URLs in queue
+2026-01-20 17:44:25,505 - root - DEBUG - grab_next_url:52 - Selected URL from domain sdc.university (last crawled 1768927465.5s ago)
+2026-01-20 17:44:25,507 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3406 remaining
+2026-01-20 17:44:25,508 - root - INFO - <module>:132 - Processing URL: https://sdc.university/education/masters-programme/innovation-management/
+2026-01-20 17:44:25,508 - root - DEBUG - <module>:143 - Making HTTP request to: https://sdc.university/education/masters-programme/innovation-management/
+2026-01-20 17:44:25,509 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): sdc.university:443
+2026-01-20 17:44:25,667 - urllib3.connectionpool - DEBUG - _make_request:544 - https://sdc.university:443 "GET /education/masters-programme/innovation-management/ HTTP/1.1" 200 15317
+2026-01-20 17:44:25,667 - root - DEBUG - <module>:150 - Successfully fetched https://sdc.university/education/masters-programme/innovation-management/ (44214 bytes)
+2026-01-20 17:44:26,183 - root - INFO - save_page_json:114 - Saved page content to page_84.json
+2026-01-20 17:44:26,183 - root - DEBUG - <module>:161 - Found 81 link elements
+2026-01-20 17:44:26,184 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/groups/6523114
+2026-01-20 17:44:26,184 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: http://www.e-pages.dk
+2026-01-20 17:44:26,284 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for http://www.e-pages.dk
+2026-01-20 17:44:26,284 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/sinodanishcenter/
+2026-01-20 17:44:26,284 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/sinodanishcenter/
+2026-01-20 17:44:26,285 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/edu/school?id=154066
+2026-01-20 17:44:26,285 - root - INFO - <module>:172 - Extracted 75 valid links from https://sdc.university/education/masters-programme/innovation-management/
+2026-01-20 17:44:26,285 - root - DEBUG - save_new_urls:100 - Processing 75 potential new URLs
+2026-01-20 17:44:26,331 - root - DEBUG - save_new_urls:114 - Found 3077 URLs to crawl, 344 already crawled
+2026-01-20 17:44:26,331 - root - INFO - save_new_urls:133 - Added 43 new URLs to queue
+2026-01-20 17:44:26,331 - root - DEBUG - save_new_urls:135 - Skipped 32 duplicate URLs
+2026-01-20 17:44:26,332 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:26,340 - root - DEBUG - grab_next_url:25 - Loaded timing data for 126 domains
+2026-01-20 17:44:26,357 - root - DEBUG - grab_next_url:37 - Found 3449 URLs in queue
+2026-01-20 17:44:26,357 - root - DEBUG - grab_next_url:52 - Selected URL from domain nyidanmark.dk (last crawled 1768927466.4s ago)
+2026-01-20 17:44:26,359 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3448 remaining
+2026-01-20 17:44:26,360 - root - INFO - <module>:132 - Processing URL: https://nyidanmark.dk/en-GB/You-want-to-apply/Study
+2026-01-20 17:44:26,360 - root - DEBUG - <module>:143 - Making HTTP request to: https://nyidanmark.dk/en-GB/You-want-to-apply/Study
+2026-01-20 17:44:26,361 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): nyidanmark.dk:443
+2026-01-20 17:44:26,552 - urllib3.connectionpool - DEBUG - _make_request:544 - https://nyidanmark.dk:443 "GET /en-GB/You-want-to-apply/Study HTTP/1.1" 200 20004
+2026-01-20 17:44:26,560 - root - DEBUG - <module>:150 - Successfully fetched https://nyidanmark.dk/en-GB/You-want-to-apply/Study (20004 bytes)
+2026-01-20 17:44:27,058 - root - INFO - save_page_json:114 - Saved page content to page_85.json
+2026-01-20 17:44:27,058 - root - DEBUG - <module>:161 - Found 15 link elements
+2026-01-20 17:44:27,059 - root - INFO - <module>:172 - Extracted 15 valid links from https://nyidanmark.dk/en-GB/You-want-to-apply/Study
+2026-01-20 17:44:27,059 - root - DEBUG - save_new_urls:100 - Processing 15 potential new URLs
+2026-01-20 17:44:27,123 - root - DEBUG - save_new_urls:114 - Found 3119 URLs to crawl, 345 already crawled
+2026-01-20 17:44:27,124 - root - INFO - save_new_urls:133 - Added 14 new URLs to queue
+2026-01-20 17:44:27,124 - root - DEBUG - save_new_urls:135 - Skipped 1 duplicate URLs
+2026-01-20 17:44:27,124 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:27,133 - root - DEBUG - grab_next_url:25 - Loaded timing data for 127 domains
+2026-01-20 17:44:27,157 - root - DEBUG - grab_next_url:37 - Found 3462 URLs in queue
+2026-01-20 17:44:27,158 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.newstudents.aau.dk (last crawled 2.5s ago)
+2026-01-20 17:44:27,160 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3461 remaining
+2026-01-20 17:44:27,161 - root - INFO - <module>:132 - Processing URL: https://www.newstudents.aau.dk/masters-aalborg/information/buddy-network/
+2026-01-20 17:44:27,161 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.newstudents.aau.dk/masters-aalborg/information/buddy-network/
+2026-01-20 17:44:27,161 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.newstudents.aau.dk:443
+2026-01-20 17:44:27,250 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.newstudents.aau.dk:443 "GET /masters-aalborg/information/buddy-network/ HTTP/1.1" 308 None
+2026-01-20 17:44:27,590 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.newstudents.aau.dk:443 "GET /masters-aalborg/information/buddy-network HTTP/1.1" 404 None
+2026-01-20 17:44:27,591 - root - WARNING - <module>:147 - HTTP 404 for https://www.newstudents.aau.dk/masters-aalborg/information/buddy-network/
+2026-01-20 17:44:27,591 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:27,599 - root - DEBUG - grab_next_url:25 - Loaded timing data for 127 domains
+2026-01-20 17:44:27,616 - root - DEBUG - grab_next_url:37 - Found 3461 URLs in queue
+2026-01-20 17:44:27,616 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.studyservice.aau.dk (last crawled 1345.4s ago)
+2026-01-20 17:44:27,618 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3460 remaining
+2026-01-20 17:44:27,619 - root - INFO - <module>:132 - Processing URL: https://www.studyservice.aau.dk/international-cooperation-on-education/new-agreement-on-international-exchange-or-education
+2026-01-20 17:44:27,619 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.studyservice.aau.dk/international-cooperation-on-education/new-agreement-on-international-exchange-or-education
+2026-01-20 17:44:27,620 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.studyservice.aau.dk:443
+2026-01-20 17:44:27,722 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.studyservice.aau.dk:443 "GET /international-cooperation-on-education/new-agreement-on-international-exchange-or-education HTTP/1.1" 301 17
+2026-01-20 17:44:27,723 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.en.aus.aau.dk:443
+2026-01-20 17:44:27,849 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.en.aus.aau.dk:443 "GET /international-cooperation-on-education/new-agreement-on-international-exchange-or-education HTTP/1.1" 200 None
+2026-01-20 17:44:27,850 - root - DEBUG - <module>:150 - Successfully fetched https://www.studyservice.aau.dk/international-cooperation-on-education/new-agreement-on-international-exchange-or-education (146952 bytes)
+2026-01-20 17:44:28,357 - root - INFO - save_page_json:114 - Saved page content to page_86.json
+2026-01-20 17:44:28,358 - root - DEBUG - <module>:161 - Found 68 link elements
+2026-01-20 17:44:28,358 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.studyservice.aau.dk
+2026-01-20 17:44:28,417 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.studyservice.aau.dk
+2026-01-20 17:44:28,417 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.aus.aau.dk
+2026-01-20 17:44:28,556 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.aus.aau.dk
+2026-01-20 17:44:28,556 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.kvalitet.aau.dk
+2026-01-20 17:44:28,909 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.kvalitet.aau.dk
+2026-01-20 17:44:28,910 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:28,910 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/InternationalStudentsAalborgUniversity
+2026-01-20 17:44:28,910 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:28,910 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/
+2026-01-20 17:44:28,910 - root - INFO - <module>:172 - Extracted 52 valid links from https://www.studyservice.aau.dk/international-cooperation-on-education/new-agreement-on-international-exchange-or-education
+2026-01-20 17:44:28,910 - root - DEBUG - save_new_urls:100 - Processing 52 potential new URLs
+2026-01-20 17:44:28,959 - root - DEBUG - save_new_urls:114 - Found 3131 URLs to crawl, 347 already crawled
+2026-01-20 17:44:28,959 - root - INFO - save_new_urls:133 - Added 17 new URLs to queue
+2026-01-20 17:44:28,960 - root - DEBUG - save_new_urls:135 - Skipped 35 duplicate URLs
+2026-01-20 17:44:28,960 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:28,966 - root - DEBUG - grab_next_url:25 - Loaded timing data for 127 domains
+2026-01-20 17:44:28,981 - root - DEBUG - grab_next_url:37 - Found 3477 URLs in queue
+2026-01-20 17:44:28,982 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.studyservice.aau.dk (last crawled 1.4s ago)
+2026-01-20 17:44:28,984 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3476 remaining
+2026-01-20 17:44:28,985 - root - INFO - <module>:132 - Processing URL: https://www.studyservice.aau.dk/international-cooperation-on-education/erasmus-staff-mobility
+2026-01-20 17:44:28,985 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.studyservice.aau.dk/international-cooperation-on-education/erasmus-staff-mobility
+2026-01-20 17:44:28,986 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.studyservice.aau.dk:443
+2026-01-20 17:44:29,058 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.studyservice.aau.dk:443 "GET /international-cooperation-on-education/erasmus-staff-mobility HTTP/1.1" 301 17
+2026-01-20 17:44:29,059 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.en.aus.aau.dk:443
+2026-01-20 17:44:29,183 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.en.aus.aau.dk:443 "GET /international-cooperation-on-education/erasmus-staff-mobility HTTP/1.1" 200 None
+2026-01-20 17:44:29,185 - root - DEBUG - <module>:150 - Successfully fetched https://www.studyservice.aau.dk/international-cooperation-on-education/erasmus-staff-mobility (158352 bytes)
+2026-01-20 17:44:29,692 - root - INFO - save_page_json:114 - Saved page content to page_87.json
+2026-01-20 17:44:29,693 - root - DEBUG - <module>:161 - Found 65 link elements
+2026-01-20 17:44:29,693 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: http://staffmobility.eu
+2026-01-20 17:44:29,831 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for http://staffmobility.eu
+2026-01-20 17:44:29,832 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://erasmus-plus.ec.europa.eu
+2026-01-20 17:44:29,966 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://erasmus-plus.ec.europa.eu
+2026-01-20 17:44:29,966 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://erasmusplus.rs
+2026-01-20 17:44:30,776 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://erasmusplus.rs
+2026-01-20 17:44:30,776 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://erasmusplus.rs/scholarships/staff-mobility/
+2026-01-20 17:44:30,776 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: http://staffmobility.eu/staff-week-search
+2026-01-20 17:44:30,777 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:30,777 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/InternationalStudentsAalborgUniversity
+2026-01-20 17:44:30,777 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:30,777 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/
+2026-01-20 17:44:30,777 - root - INFO - <module>:172 - Extracted 51 valid links from https://www.studyservice.aau.dk/international-cooperation-on-education/erasmus-staff-mobility
+2026-01-20 17:44:30,777 - root - DEBUG - save_new_urls:100 - Processing 51 potential new URLs
+2026-01-20 17:44:30,827 - root - DEBUG - save_new_urls:114 - Found 3147 URLs to crawl, 348 already crawled
+2026-01-20 17:44:30,828 - root - INFO - save_new_urls:133 - Added 4 new URLs to queue
+2026-01-20 17:44:30,828 - root - DEBUG - save_new_urls:135 - Skipped 47 duplicate URLs
+2026-01-20 17:44:30,828 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:30,835 - root - DEBUG - grab_next_url:25 - Loaded timing data for 127 domains
+2026-01-20 17:44:30,852 - root - DEBUG - grab_next_url:37 - Found 3480 URLs in queue
+2026-01-20 17:44:30,852 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.students.aau.dk (last crawled 1205.2s ago)
+2026-01-20 17:44:30,855 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3479 remaining
+2026-01-20 17:44:30,856 - root - INFO - <module>:132 - Processing URL: https://www.students.aau.dk/choices-along-the-way-and-jobs/stays-abroad
+2026-01-20 17:44:30,856 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.students.aau.dk/choices-along-the-way-and-jobs/stays-abroad
+2026-01-20 17:44:30,856 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.students.aau.dk:443
+2026-01-20 17:44:31,002 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.students.aau.dk:443 "GET /choices-along-the-way-and-jobs/stays-abroad HTTP/1.1" 200 None
+2026-01-20 17:44:31,003 - root - DEBUG - <module>:150 - Successfully fetched https://www.students.aau.dk/choices-along-the-way-and-jobs/stays-abroad (187286 bytes)
+2026-01-20 17:44:31,496 - root - INFO - save_page_json:114 - Saved page content to page_88.json
+2026-01-20 17:44:31,496 - root - DEBUG - <module>:161 - Found 87 link elements
+2026-01-20 17:44:31,497 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/InternationalStudentsAalborgUniversity/
+2026-01-20 17:44:31,497 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://m.facebook.com/BuddyAAU/
+2026-01-20 17:44:31,497 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://instagram.com/buddynetwork_aau?igshid=YmMyMTA2M2Y=
+2026-01-20 17:44:31,497 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/InternationalStudentsAalborgUniversity/
+2026-01-20 17:44:31,497 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://m.facebook.com/BuddyAAU/
+2026-01-20 17:44:31,497 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://instagram.com/buddynetwork_aau?igshid=YmMyMTA2M2Y=
+2026-01-20 17:44:31,498 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:31,498 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/InternationalStudentsAalborgUniversity
+2026-01-20 17:44:31,498 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:31,498 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/
+2026-01-20 17:44:31,498 - root - INFO - <module>:172 - Extracted 73 valid links from https://www.students.aau.dk/choices-along-the-way-and-jobs/stays-abroad
+2026-01-20 17:44:31,498 - root - DEBUG - save_new_urls:100 - Processing 73 potential new URLs
+2026-01-20 17:44:31,560 - root - DEBUG - save_new_urls:114 - Found 3150 URLs to crawl, 349 already crawled
+2026-01-20 17:44:31,560 - root - INFO - save_new_urls:133 - Added 2 new URLs to queue
+2026-01-20 17:44:31,561 - root - DEBUG - save_new_urls:135 - Skipped 71 duplicate URLs
+2026-01-20 17:44:31,561 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:31,570 - root - DEBUG - grab_next_url:25 - Loaded timing data for 127 domains
+2026-01-20 17:44:31,597 - root - DEBUG - grab_next_url:37 - Found 3481 URLs in queue
+2026-01-20 17:44:31,597 - root - DEBUG - grab_next_url:57 - Rate limiting www.students.aau.dk: only 0.7s since last crawl
+2026-01-20 17:44:31,597 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.aaudxp-cms.aau.dk (last crawled 939.5s ago)
+2026-01-20 17:44:31,599 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3480 remaining
+2026-01-20 17:44:31,600 - root - INFO - <module>:132 - Processing URL: https://www.aaudxp-cms.aau.dk/media/1opoipwq/consent-form.pdf
+2026-01-20 17:44:31,600 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.aaudxp-cms.aau.dk/media/1opoipwq/consent-form.pdf
+2026-01-20 17:44:31,600 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.aaudxp-cms.aau.dk:443
+2026-01-20 17:44:31,730 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.aaudxp-cms.aau.dk:443 "GET /media/1opoipwq/consent-form.pdf HTTP/1.1" 200 239466
+2026-01-20 17:44:31,783 - root - DEBUG - <module>:150 - Successfully fetched https://www.aaudxp-cms.aau.dk/media/1opoipwq/consent-form.pdf (239466 bytes)
+2026-01-20 17:44:31,840 - charset_normalizer - DEBUG - from_bytes:535 - Encoding detection: Unable to determine any suitable charset.
+2026-01-20 17:44:31,847 - charset_normalizer - DEBUG - from_bytes:535 - Encoding detection: Unable to determine any suitable charset.
+2026-01-20 17:44:31,849 - bs4.dammit - WARNING - __init__:825 - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2026-01-20 17:44:32,979 - root - INFO - save_page_json:114 - Saved page content to page_89.json
+2026-01-20 17:44:32,980 - root - DEBUG - <module>:161 - Found 0 link elements
+2026-01-20 17:44:32,980 - root - INFO - <module>:172 - Extracted 0 valid links from https://www.aaudxp-cms.aau.dk/media/1opoipwq/consent-form.pdf
+2026-01-20 17:44:32,980 - root - DEBUG - save_new_urls:100 - Processing 0 potential new URLs
+2026-01-20 17:44:33,046 - root - DEBUG - save_new_urls:114 - Found 3151 URLs to crawl, 350 already crawled
+2026-01-20 17:44:33,046 - root - DEBUG - save_new_urls:137 - No new URLs to add (0 were duplicates)
+2026-01-20 17:44:33,046 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:33,054 - root - DEBUG - grab_next_url:25 - Loaded timing data for 127 domains
+2026-01-20 17:44:33,055 - root - DEBUG - grab_next_url:37 - Found 3480 URLs in queue
+2026-01-20 17:44:33,055 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.students.aau.dk (last crawled 2.2s ago)
+2026-01-20 17:44:33,058 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3479 remaining
+2026-01-20 17:44:33,059 - root - INFO - <module>:132 - Processing URL: https://www.students.aau.dk/choices-along-the-way-and-jobs/stays-abroad/contact-international-office
+2026-01-20 17:44:33,059 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.students.aau.dk/choices-along-the-way-and-jobs/stays-abroad/contact-international-office
+2026-01-20 17:44:33,059 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.students.aau.dk:443
+2026-01-20 17:44:33,188 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.students.aau.dk:443 "GET /choices-along-the-way-and-jobs/stays-abroad/contact-international-office HTTP/1.1" 200 None
+2026-01-20 17:44:33,190 - root - DEBUG - <module>:150 - Successfully fetched https://www.students.aau.dk/choices-along-the-way-and-jobs/stays-abroad/contact-international-office (188242 bytes)
+2026-01-20 17:44:33,703 - root - INFO - save_page_json:114 - Saved page content to page_90.json
+2026-01-20 17:44:33,703 - root - DEBUG - <module>:161 - Found 113 link elements
+2026-01-20 17:44:33,704 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/InternationalStudentsAalborgUniversity/
+2026-01-20 17:44:33,704 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://m.facebook.com/BuddyAAU/
+2026-01-20 17:44:33,704 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://instagram.com/buddynetwork_aau?igshid=YmMyMTA2M2Y=
+2026-01-20 17:44:33,704 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/InternationalStudentsAalborgUniversity/
+2026-01-20 17:44:33,704 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://m.facebook.com/BuddyAAU/
+2026-01-20 17:44:33,704 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://instagram.com/buddynetwork_aau?igshid=YmMyMTA2M2Y=
+2026-01-20 17:44:33,705 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:33,705 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/InternationalStudentsAalborgUniversity
+2026-01-20 17:44:33,705 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:33,705 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/
+2026-01-20 17:44:33,705 - root - INFO - <module>:172 - Extracted 70 valid links from https://www.students.aau.dk/choices-along-the-way-and-jobs/stays-abroad/contact-international-office
+2026-01-20 17:44:33,705 - root - DEBUG - save_new_urls:100 - Processing 70 potential new URLs
+2026-01-20 17:44:33,769 - root - DEBUG - save_new_urls:114 - Found 3150 URLs to crawl, 351 already crawled
+2026-01-20 17:44:33,769 - root - INFO - save_new_urls:133 - Added 2 new URLs to queue
+2026-01-20 17:44:33,770 - root - DEBUG - save_new_urls:135 - Skipped 68 duplicate URLs
+2026-01-20 17:44:33,770 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:33,777 - root - DEBUG - grab_next_url:25 - Loaded timing data for 127 domains
+2026-01-20 17:44:33,803 - root - DEBUG - grab_next_url:37 - Found 3481 URLs in queue
+2026-01-20 17:44:33,803 - root - DEBUG - grab_next_url:52 - Selected URL from domain clients.mapsindoors.com (last crawled 1220.4s ago)
+2026-01-20 17:44:33,806 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3480 remaining
+2026-01-20 17:44:33,807 - root - INFO - <module>:132 - Processing URL: https://clients.mapsindoors.com/aau/57482221bc1f570e288b8ef0/search
+2026-01-20 17:44:33,807 - root - DEBUG - <module>:143 - Making HTTP request to: https://clients.mapsindoors.com/aau/57482221bc1f570e288b8ef0/search
+2026-01-20 17:44:33,807 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): clients.mapsindoors.com:443
+2026-01-20 17:44:33,918 - urllib3.connectionpool - DEBUG - _make_request:544 - https://clients.mapsindoors.com:443 "GET /aau/57482221bc1f570e288b8ef0/search HTTP/1.1" 200 None
+2026-01-20 17:44:33,919 - root - DEBUG - <module>:150 - Successfully fetched https://clients.mapsindoors.com/aau/57482221bc1f570e288b8ef0/search (20998 bytes)
+2026-01-20 17:44:34,410 - root - INFO - save_page_json:114 - Saved page content to page_91.json
+2026-01-20 17:44:34,411 - root - DEBUG - <module>:161 - Found 0 link elements
+2026-01-20 17:44:34,411 - root - INFO - <module>:172 - Extracted 0 valid links from https://clients.mapsindoors.com/aau/57482221bc1f570e288b8ef0/search
+2026-01-20 17:44:34,411 - root - DEBUG - save_new_urls:100 - Processing 0 potential new URLs
+2026-01-20 17:44:34,466 - root - DEBUG - save_new_urls:114 - Found 3150 URLs to crawl, 352 already crawled
+2026-01-20 17:44:34,466 - root - DEBUG - save_new_urls:137 - No new URLs to add (0 were duplicates)
+2026-01-20 17:44:34,466 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:34,473 - root - DEBUG - grab_next_url:25 - Loaded timing data for 127 domains
+2026-01-20 17:44:34,474 - root - DEBUG - grab_next_url:37 - Found 3480 URLs in queue
+2026-01-20 17:44:34,474 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.en.campusservice.aau.dk (last crawled 1768927474.5s ago)
+2026-01-20 17:44:34,477 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3479 remaining
+2026-01-20 17:44:34,477 - root - INFO - <module>:132 - Processing URL: https://www.en.campusservice.aau.dk/
+2026-01-20 17:44:34,477 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.en.campusservice.aau.dk/
+2026-01-20 17:44:34,478 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.en.campusservice.aau.dk:443
+2026-01-20 17:44:34,626 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.en.campusservice.aau.dk:443 "GET / HTTP/1.1" 200 None
+2026-01-20 17:44:34,627 - root - DEBUG - <module>:150 - Successfully fetched https://www.en.campusservice.aau.dk/ (148944 bytes)
+2026-01-20 17:44:35,133 - root - INFO - save_page_json:114 - Saved page content to page_92.json
+2026-01-20 17:44:35,133 - root - DEBUG - <module>:161 - Found 86 link elements
+2026-01-20 17:44:35,133 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.campusservice.aau.dk
+2026-01-20 17:44:35,288 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.campusservice.aau.dk
+2026-01-20 17:44:35,289 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:35,289 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/InternationalStudentsAalborgUniversity
+2026-01-20 17:44:35,289 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:35,289 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/
+2026-01-20 17:44:35,289 - root - INFO - <module>:172 - Extracted 72 valid links from https://www.en.campusservice.aau.dk/
+2026-01-20 17:44:35,289 - root - DEBUG - save_new_urls:100 - Processing 72 potential new URLs
+2026-01-20 17:44:35,340 - root - DEBUG - save_new_urls:114 - Found 3149 URLs to crawl, 353 already crawled
+2026-01-20 17:44:35,340 - root - INFO - save_new_urls:133 - Added 34 new URLs to queue
+2026-01-20 17:44:35,340 - root - DEBUG - save_new_urls:135 - Skipped 38 duplicate URLs
+2026-01-20 17:44:35,341 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:35,347 - root - DEBUG - grab_next_url:25 - Loaded timing data for 128 domains
+2026-01-20 17:44:35,364 - root - DEBUG - grab_next_url:37 - Found 3513 URLs in queue
+2026-01-20 17:44:35,364 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.en.aau.dk (last crawled 11.5s ago)
+2026-01-20 17:44:35,366 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3512 remaining
+2026-01-20 17:44:35,367 - root - INFO - <module>:132 - Processing URL: https://www.en.aau.dk/about-aau/organisation/faculties
+2026-01-20 17:44:35,367 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.en.aau.dk/about-aau/organisation/faculties
+2026-01-20 17:44:35,368 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.en.aau.dk:443
+2026-01-20 17:44:35,526 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.en.aau.dk:443 "GET /about-aau/organisation/faculties HTTP/1.1" 200 None
+2026-01-20 17:44:35,527 - root - DEBUG - <module>:150 - Successfully fetched https://www.en.aau.dk/about-aau/organisation/faculties (188221 bytes)
+2026-01-20 17:44:36,055 - root - INFO - save_page_json:114 - Saved page content to page_93.json
+2026-01-20 17:44:36,056 - root - DEBUG - <module>:161 - Found 87 link elements
+2026-01-20 17:44:36,056 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.ssh.aau.dk
+2026-01-20 17:44:36,233 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.ssh.aau.dk
+2026-01-20 17:44:36,233 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/110440
+2026-01-20 17:44:36,233 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/s%C3%B8ren-ginnerup-kristiansen
+2026-01-20 17:44:36,234 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/margit-malmmose-2
+2026-01-20 17:44:36,234 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.en.engineering.aau.dk
+2026-01-20 17:44:37,120 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.en.engineering.aau.dk
+2026-01-20 17:44:37,121 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/da/persons/jesper-wengel
+2026-01-20 17:44:37,121 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/101108
+2026-01-20 17:44:37,121 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/100394
+2026-01-20 17:44:37,121 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.medicine.aau.dk
+2026-01-20 17:44:37,703 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.medicine.aau.dk
+2026-01-20 17:44:37,703 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/da/persons/karina-dahl-steffensen
+2026-01-20 17:44:37,703 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/103028
+2026-01-20 17:44:37,704 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/104800
+2026-01-20 17:44:37,704 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.en.tech.aau.dk
+2026-01-20 17:44:37,946 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.en.tech.aau.dk
+2026-01-20 17:44:37,946 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/103763
+2026-01-20 17:44:37,946 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/da/persons/lph
+2026-01-20 17:44:37,946 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/103763
+2026-01-20 17:44:37,946 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:37,947 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/InternationalStudentsAalborgUniversity
+2026-01-20 17:44:37,947 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:37,947 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/
+2026-01-20 17:44:37,947 - root - INFO - <module>:172 - Extracted 66 valid links from https://www.en.aau.dk/about-aau/organisation/faculties
+2026-01-20 17:44:37,947 - root - DEBUG - save_new_urls:100 - Processing 66 potential new URLs
+2026-01-20 17:44:37,996 - root - DEBUG - save_new_urls:114 - Found 3182 URLs to crawl, 354 already crawled
+2026-01-20 17:44:37,997 - root - INFO - save_new_urls:133 - Added 3 new URLs to queue
+2026-01-20 17:44:37,997 - root - DEBUG - save_new_urls:135 - Skipped 63 duplicate URLs
+2026-01-20 17:44:37,997 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:38,003 - root - DEBUG - grab_next_url:25 - Loaded timing data for 128 domains
+2026-01-20 17:44:38,020 - root - DEBUG - grab_next_url:37 - Found 3515 URLs in queue
+2026-01-20 17:44:38,020 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.en.aau.dk (last crawled 2.7s ago)
+2026-01-20 17:44:38,022 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3514 remaining
+2026-01-20 17:44:38,023 - root - INFO - <module>:132 - Processing URL: https://www.en.aau.dk/about-aau/organisation/departments
+2026-01-20 17:44:38,023 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.en.aau.dk/about-aau/organisation/departments
+2026-01-20 17:44:38,024 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.en.aau.dk:443
+2026-01-20 17:44:38,233 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.en.aau.dk:443 "GET /about-aau/organisation/departments HTTP/1.1" 200 None
+2026-01-20 17:44:38,234 - root - DEBUG - <module>:150 - Successfully fetched https://www.en.aau.dk/about-aau/organisation/departments (193505 bytes)
+2026-01-20 17:44:38,759 - root - INFO - save_page_json:114 - Saved page content to page_94.json
+2026-01-20 17:44:38,759 - root - DEBUG - <module>:161 - Found 134 link elements
+2026-01-20 17:44:38,760 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/lonemalm
+2026-01-20 17:44:38,760 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/137170
+2026-01-20 17:44:38,760 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/lgru
+2026-01-20 17:44:38,760 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/da/persons/18579d3f-f437-4453-bc78-30ecad2bfaee
+2026-01-20 17:44:38,760 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/106251
+2026-01-20 17:44:38,760 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/da/persons/anders-brøndum-klein-2
+2026-01-20 17:44:38,760 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.en.bio.aau.dk
+2026-01-20 17:44:38,957 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.en.bio.aau.dk
+2026-01-20 17:44:38,957 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/102529
+2026-01-20 17:44:38,957 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/103483
+2026-01-20 17:44:38,957 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/moko
+2026-01-20 17:44:38,957 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/jkk
+2026-01-20 17:44:38,957 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/mph
+2026-01-20 17:44:38,957 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/140096
+2026-01-20 17:44:38,958 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/stricker
+2026-01-20 17:44:38,958 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.communication.aau.dk
+2026-01-20 17:44:39,052 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.communication.aau.dk
+2026-01-20 17:44:39,052 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/da/persons/d6cfc297-d530-452b-9fc8-88dd01605c74
+2026-01-20 17:44:39,052 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/106477
+2026-01-20 17:44:39,052 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/da/persons/af763113-4302-4d8c-ade8-1dc881e5511e
+2026-01-20 17:44:39,053 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/108620
+2026-01-20 17:44:39,053 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/110550
+2026-01-20 17:44:39,053 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/west
+2026-01-20 17:44:39,053 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/109164
+2026-01-20 17:44:39,053 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/ove-kjeld-andersen
+2026-01-20 17:44:39,053 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/gl
+2026-01-20 17:44:39,053 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/106838
+2026-01-20 17:44:39,053 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/rst
+2026-01-20 17:44:39,053 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/108217
+2026-01-20 17:44:39,053 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/saba
+2026-01-20 17:44:39,053 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/mph
+2026-01-20 17:44:39,054 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/tina
+2026-01-20 17:44:39,054 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/100471
+2026-01-20 17:44:39,054 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/107062
+2026-01-20 17:44:39,054 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/da/persons/simon-mou-skogberg/
+2026-01-20 17:44:39,054 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/jens-christian-moesgaard-rauhe
+2026-01-20 17:44:39,054 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/103350
+2026-01-20 17:44:39,054 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/jmc
+2026-01-20 17:44:39,054 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/da/persons/mowi
+2026-01-20 17:44:39,054 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/129224
+2026-01-20 17:44:39,054 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/jmc
+2026-01-20 17:44:39,054 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/103461
+2026-01-20 17:44:39,055 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/da/persons/kristianb/
+2026-01-20 17:44:39,055 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/mariannen
+2026-01-20 17:44:39,055 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.politics-society.aau.dk
+2026-01-20 17:44:39,309 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.politics-society.aau.dk
+2026-01-20 17:44:39,309 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/da/persons/f3b7a428-f753-4bb9-b4d3-aa2733543db9
+2026-01-20 17:44:39,309 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/da/persons/eb00c585-af62-42eb-8100-3dabff41f6ca
+2026-01-20 17:44:39,309 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/da/persons/2103e7d8-af52-4ddb-a473-10fbf2ace506
+2026-01-20 17:44:39,309 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/da/persons/115989
+2026-01-20 17:44:39,309 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/da/persons/111953
+2026-01-20 17:44:39,310 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.iaspbl.aau.dk
+2026-01-20 17:44:39,409 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.iaspbl.aau.dk
+2026-01-20 17:44:39,409 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/109500
+2026-01-20 17:44:39,409 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://vbn.aau.dk/en/persons/chha
+2026-01-20 17:44:39,409 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:39,409 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/InternationalStudentsAalborgUniversity
+2026-01-20 17:44:39,410 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:39,410 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/
+2026-01-20 17:44:39,410 - root - INFO - <module>:172 - Extracted 78 valid links from https://www.en.aau.dk/about-aau/organisation/departments
+2026-01-20 17:44:39,410 - root - DEBUG - save_new_urls:100 - Processing 78 potential new URLs
+2026-01-20 17:44:39,462 - root - DEBUG - save_new_urls:114 - Found 3184 URLs to crawl, 355 already crawled
+2026-01-20 17:44:39,463 - root - INFO - save_new_urls:133 - Added 8 new URLs to queue
+2026-01-20 17:44:39,463 - root - DEBUG - save_new_urls:135 - Skipped 70 duplicate URLs
+2026-01-20 17:44:39,463 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:39,470 - root - DEBUG - grab_next_url:25 - Loaded timing data for 128 domains
+2026-01-20 17:44:39,489 - root - DEBUG - grab_next_url:37 - Found 3522 URLs in queue
+2026-01-20 17:44:39,489 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.aau.dk (last crawled 39.5s ago)
+2026-01-20 17:44:39,491 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3521 remaining
+2026-01-20 17:44:39,492 - root - INFO - <module>:132 - Processing URL: https://www.aau.dk/uddannelser/kandidat/liste/esbjerg#main
+2026-01-20 17:44:39,492 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.aau.dk/uddannelser/kandidat/liste/esbjerg#main
+2026-01-20 17:44:39,493 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.aau.dk:443
+2026-01-20 17:44:39,614 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.aau.dk:443 "GET /uddannelser/kandidat/liste/esbjerg HTTP/1.1" 200 None
+2026-01-20 17:44:39,632 - root - DEBUG - <module>:150 - Successfully fetched https://www.aau.dk/uddannelser/kandidat/liste/esbjerg#main (225660 bytes)
+2026-01-20 17:44:40,170 - root - INFO - save_page_json:114 - Saved page content to page_95.json
+2026-01-20 17:44:40,171 - root - DEBUG - <module>:161 - Found 72 link elements
+2026-01-20 17:44:40,172 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:40,172 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:40,172 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/mycompany/
+2026-01-20 17:44:40,172 - root - INFO - <module>:172 - Extracted 65 valid links from https://www.aau.dk/uddannelser/kandidat/liste/esbjerg#main
+2026-01-20 17:44:40,172 - root - DEBUG - save_new_urls:100 - Processing 65 potential new URLs
+2026-01-20 17:44:40,241 - root - DEBUG - save_new_urls:114 - Found 3191 URLs to crawl, 356 already crawled
+2026-01-20 17:44:40,241 - root - INFO - save_new_urls:133 - Added 1 new URLs to queue
+2026-01-20 17:44:40,241 - root - DEBUG - save_new_urls:135 - Skipped 64 duplicate URLs
+2026-01-20 17:44:40,242 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:40,252 - root - DEBUG - grab_next_url:25 - Loaded timing data for 128 domains
+2026-01-20 17:44:40,281 - root - DEBUG - grab_next_url:37 - Found 3522 URLs in queue
+2026-01-20 17:44:40,282 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.en.aau.dk (last crawled 2.3s ago)
+2026-01-20 17:44:40,284 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3521 remaining
+2026-01-20 17:44:40,285 - root - INFO - <module>:132 - Processing URL: https://www.en.aau.dk/education/master/list/esbjerg
+2026-01-20 17:44:40,285 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.en.aau.dk/education/master/list/esbjerg
+2026-01-20 17:44:40,285 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.en.aau.dk:443
+2026-01-20 17:44:40,424 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.en.aau.dk:443 "GET /education/master/list/esbjerg HTTP/1.1" 200 None
+2026-01-20 17:44:40,425 - root - DEBUG - <module>:150 - Successfully fetched https://www.en.aau.dk/education/master/list/esbjerg (168139 bytes)
+2026-01-20 17:44:40,887 - root - DEBUG - <module>:161 - Found 73 link elements
+2026-01-20 17:44:40,888 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:40,889 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/InternationalStudentsAalborgUniversity
+2026-01-20 17:44:40,889 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:40,889 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/
+2026-01-20 17:44:40,889 - root - INFO - <module>:172 - Extracted 65 valid links from https://www.en.aau.dk/education/master/list/esbjerg
+2026-01-20 17:44:40,889 - root - DEBUG - save_new_urls:100 - Processing 65 potential new URLs
+2026-01-20 17:44:40,952 - root - DEBUG - save_new_urls:114 - Found 3191 URLs to crawl, 357 already crawled
+2026-01-20 17:44:40,953 - root - INFO - save_new_urls:133 - Added 1 new URLs to queue
+2026-01-20 17:44:40,953 - root - DEBUG - save_new_urls:135 - Skipped 64 duplicate URLs
+2026-01-20 17:44:40,953 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:40,960 - root - DEBUG - grab_next_url:25 - Loaded timing data for 128 domains
+2026-01-20 17:44:40,987 - root - DEBUG - grab_next_url:37 - Found 3522 URLs in queue
+2026-01-20 17:44:40,987 - root - DEBUG - grab_next_url:57 - Rate limiting www.en.aau.dk: only 0.7s since last crawl
+2026-01-20 17:44:40,987 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.en.its.aau.dk (last crawled 1244.9s ago)
+2026-01-20 17:44:40,990 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3521 remaining
+2026-01-20 17:44:40,991 - root - INFO - <module>:132 - Processing URL: https://www.en.its.aau.dk/support
+2026-01-20 17:44:40,991 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.en.its.aau.dk/support
+2026-01-20 17:44:40,991 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.en.its.aau.dk:443
+2026-01-20 17:44:41,142 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.en.its.aau.dk:443 "GET /support HTTP/1.1" 200 None
+2026-01-20 17:44:41,143 - root - DEBUG - <module>:150 - Successfully fetched https://www.en.its.aau.dk/support (133815 bytes)
+2026-01-20 17:44:41,685 - root - INFO - save_page_json:114 - Saved page content to page_96.json
+2026-01-20 17:44:41,685 - root - DEBUG - <module>:161 - Found 75 link elements
+2026-01-20 17:44:41,685 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.en.its.aau.dk
+2026-01-20 17:44:41,779 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.en.its.aau.dk
+2026-01-20 17:44:41,779 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.its.aau.dk
+2026-01-20 17:44:41,870 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.its.aau.dk
+2026-01-20 17:44:41,870 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://serviceportal.aau.dk
+2026-01-20 17:44:42,146 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://serviceportal.aau.dk
+2026-01-20 17:44:42,146 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://serviceportal.aau.dk
+2026-01-20 17:44:42,146 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://serviceportal.aau.dk
+2026-01-20 17:44:42,146 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://serviceportal.aau.dk
+2026-01-20 17:44:42,147 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:42,147 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/InternationalStudentsAalborgUniversity
+2026-01-20 17:44:42,147 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:42,147 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/
+2026-01-20 17:44:42,147 - root - INFO - <module>:172 - Extracted 62 valid links from https://www.en.its.aau.dk/support
+2026-01-20 17:44:42,147 - root - DEBUG - save_new_urls:100 - Processing 62 potential new URLs
+2026-01-20 17:44:42,204 - root - DEBUG - save_new_urls:114 - Found 3191 URLs to crawl, 358 already crawled
+2026-01-20 17:44:42,204 - root - INFO - save_new_urls:133 - Added 2 new URLs to queue
+2026-01-20 17:44:42,204 - root - DEBUG - save_new_urls:135 - Skipped 60 duplicate URLs
+2026-01-20 17:44:42,204 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:42,213 - root - DEBUG - grab_next_url:25 - Loaded timing data for 128 domains
+2026-01-20 17:44:42,239 - root - DEBUG - grab_next_url:37 - Found 3523 URLs in queue
+2026-01-20 17:44:42,239 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.en.aau.dk (last crawled 2.0s ago)
+2026-01-20 17:44:42,245 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3522 remaining
+2026-01-20 17:44:42,247 - root - INFO - <module>:132 - Processing URL: https://www.en.aau.dk/about-website#main
+2026-01-20 17:44:42,248 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.en.aau.dk/about-website#main
+2026-01-20 17:44:42,249 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.en.aau.dk:443
+2026-01-20 17:44:42,381 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.en.aau.dk:443 "GET /about-website HTTP/1.1" 200 None
+2026-01-20 17:44:42,382 - root - DEBUG - <module>:150 - Successfully fetched https://www.en.aau.dk/about-website#main (169879 bytes)
+2026-01-20 17:44:42,894 - root - INFO - save_page_json:114 - Saved page content to page_97.json
+2026-01-20 17:44:42,895 - root - DEBUG - <module>:161 - Found 71 link elements
+2026-01-20 17:44:42,895 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:42,895 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/InternationalStudentsAalborgUniversity
+2026-01-20 17:44:42,896 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:42,896 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/
+2026-01-20 17:44:42,896 - root - INFO - <module>:172 - Extracted 62 valid links from https://www.en.aau.dk/about-website#main
+2026-01-20 17:44:42,896 - root - DEBUG - save_new_urls:100 - Processing 62 potential new URLs
+2026-01-20 17:44:42,968 - root - DEBUG - save_new_urls:114 - Found 3193 URLs to crawl, 359 already crawled
+2026-01-20 17:44:42,969 - root - INFO - save_new_urls:133 - Added 1 new URLs to queue
+2026-01-20 17:44:42,969 - root - DEBUG - save_new_urls:135 - Skipped 61 duplicate URLs
+2026-01-20 17:44:42,969 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:42,980 - root - DEBUG - grab_next_url:25 - Loaded timing data for 128 domains
+2026-01-20 17:44:43,016 - root - DEBUG - grab_next_url:37 - Found 3523 URLs in queue
+2026-01-20 17:44:43,017 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.studerende.aau.dk (last crawled 41.0s ago)
+2026-01-20 17:44:43,019 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3522 remaining
+2026-01-20 17:44:43,020 - root - INFO - <module>:132 - Processing URL: https://www.studerende.aau.dk/regler-og-praktisk#main
+2026-01-20 17:44:43,020 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.studerende.aau.dk/regler-og-praktisk#main
+2026-01-20 17:44:43,021 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.studerende.aau.dk:443
+2026-01-20 17:44:43,153 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.studerende.aau.dk:443 "GET /regler-og-praktisk HTTP/1.1" 200 None
+2026-01-20 17:44:43,154 - root - DEBUG - <module>:150 - Successfully fetched https://www.studerende.aau.dk/regler-og-praktisk#main (188170 bytes)
+2026-01-20 17:44:43,665 - root - INFO - save_page_json:114 - Saved page content to page_98.json
+2026-01-20 17:44:43,665 - root - DEBUG - <module>:161 - Found 97 link elements
+2026-01-20 17:44:43,666 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:43,666 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:43,666 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/mycompany/
+2026-01-20 17:44:43,667 - root - INFO - <module>:172 - Extracted 90 valid links from https://www.studerende.aau.dk/regler-og-praktisk#main
+2026-01-20 17:44:43,667 - root - DEBUG - save_new_urls:100 - Processing 90 potential new URLs
+2026-01-20 17:44:43,733 - root - DEBUG - save_new_urls:114 - Found 3193 URLs to crawl, 360 already crawled
+2026-01-20 17:44:43,734 - root - INFO - save_new_urls:133 - Added 1 new URLs to queue
+2026-01-20 17:44:43,734 - root - DEBUG - save_new_urls:135 - Skipped 89 duplicate URLs
+2026-01-20 17:44:43,734 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:43,746 - root - DEBUG - grab_next_url:25 - Loaded timing data for 128 domains
+2026-01-20 17:44:43,767 - root - DEBUG - grab_next_url:37 - Found 3523 URLs in queue
+2026-01-20 17:44:43,767 - root - DEBUG - grab_next_url:57 - Rate limiting www.studerende.aau.dk: only 0.8s since last crawl
+2026-01-20 17:44:43,767 - root - DEBUG - grab_next_url:57 - Rate limiting www.studerende.aau.dk: only 0.8s since last crawl
+2026-01-20 17:44:43,768 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.aub.aau.dk (last crawled 454.7s ago)
+2026-01-20 17:44:43,770 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3522 remaining
+2026-01-20 17:44:43,771 - root - INFO - <module>:132 - Processing URL: https://www.aub.aau.dk/studerende/brug-af-kilder-og-refworks#main
+2026-01-20 17:44:43,771 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.aub.aau.dk/studerende/brug-af-kilder-og-refworks#main
+2026-01-20 17:44:43,772 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.aub.aau.dk:443
+2026-01-20 17:44:43,892 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.aub.aau.dk:443 "GET /studerende/brug-af-kilder-og-refworks HTTP/1.1" 200 None
+2026-01-20 17:44:43,893 - root - DEBUG - <module>:150 - Successfully fetched https://www.aub.aau.dk/studerende/brug-af-kilder-og-refworks#main (164302 bytes)
+2026-01-20 17:44:44,400 - root - INFO - save_page_json:114 - Saved page content to page_99.json
+2026-01-20 17:44:44,400 - root - DEBUG - <module>:161 - Found 96 link elements
+2026-01-20 17:44:44,401 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://refworks.proquest.com
+2026-01-20 17:44:45,230 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://refworks.proquest.com
+2026-01-20 17:44:45,230 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://stopplagiat.nu
+2026-01-20 17:44:45,270 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://stopplagiat.nu
+2026-01-20 17:44:45,270 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitetsbibliotek/
+2026-01-20 17:44:45,271 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborg_universitetsbibliotek/
+2026-01-20 17:44:45,271 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitetsbibliotek/
+2026-01-20 17:44:45,271 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborg_universitetsbibliotek/
+2026-01-20 17:44:45,271 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:45,271 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:45,271 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/mycompany/
+2026-01-20 17:44:45,272 - root - INFO - <module>:172 - Extracted 78 valid links from https://www.aub.aau.dk/studerende/brug-af-kilder-og-refworks#main
+2026-01-20 17:44:45,272 - root - DEBUG - save_new_urls:100 - Processing 78 potential new URLs
+2026-01-20 17:44:45,328 - root - DEBUG - save_new_urls:114 - Found 3193 URLs to crawl, 361 already crawled
+2026-01-20 17:44:45,328 - root - INFO - save_new_urls:133 - Added 2 new URLs to queue
+2026-01-20 17:44:45,328 - root - DEBUG - save_new_urls:135 - Skipped 76 duplicate URLs
+2026-01-20 17:44:45,329 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:45,338 - root - DEBUG - grab_next_url:25 - Loaded timing data for 128 domains
+2026-01-20 17:44:45,359 - root - DEBUG - grab_next_url:37 - Found 3524 URLs in queue
+2026-01-20 17:44:45,359 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.studerende.aau.dk (last crawled 2.3s ago)
+2026-01-20 17:44:45,362 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3523 remaining
+2026-01-20 17:44:45,362 - root - INFO - <module>:132 - Processing URL: https://www.studerende.aau.dk/regler-og-praktisk/regler
+2026-01-20 17:44:45,362 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.studerende.aau.dk/regler-og-praktisk/regler
+2026-01-20 17:44:45,363 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.studerende.aau.dk:443
+2026-01-20 17:44:45,598 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.studerende.aau.dk:443 "GET /regler-og-praktisk/regler HTTP/1.1" 200 None
+2026-01-20 17:44:45,599 - root - DEBUG - <module>:150 - Successfully fetched https://www.studerende.aau.dk/regler-og-praktisk/regler (169257 bytes)
+2026-01-20 17:44:46,113 - root - INFO - save_page_json:114 - Saved page content to page_100.json
+2026-01-20 17:44:46,113 - root - DEBUG - <module>:161 - Found 92 link elements
+2026-01-20 17:44:46,114 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:46,114 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:46,114 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/mycompany/
+2026-01-20 17:44:46,114 - root - INFO - <module>:172 - Extracted 85 valid links from https://www.studerende.aau.dk/regler-og-praktisk/regler
+2026-01-20 17:44:46,114 - root - DEBUG - save_new_urls:100 - Processing 85 potential new URLs
+2026-01-20 17:44:46,184 - root - DEBUG - save_new_urls:114 - Found 3192 URLs to crawl, 362 already crawled
+2026-01-20 17:44:46,185 - root - INFO - save_new_urls:133 - Added 1 new URLs to queue
+2026-01-20 17:44:46,185 - root - DEBUG - save_new_urls:135 - Skipped 84 duplicate URLs
+2026-01-20 17:44:46,185 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:46,195 - root - DEBUG - grab_next_url:25 - Loaded timing data for 128 domains
+2026-01-20 17:44:46,222 - root - DEBUG - grab_next_url:37 - Found 3524 URLs in queue
+2026-01-20 17:44:46,222 - root - DEBUG - grab_next_url:57 - Rate limiting www.studerende.aau.dk: only 0.9s since last crawl
+2026-01-20 17:44:46,222 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.aub.aau.dk (last crawled 2.5s ago)
+2026-01-20 17:44:46,225 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3523 remaining
+2026-01-20 17:44:46,226 - root - INFO - <module>:132 - Processing URL: https://www.aub.aau.dk/studerende/brug-af-kilder-og-refworks#f5344afd-c052-4273-9ef0-53e60352dc89
+2026-01-20 17:44:46,226 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.aub.aau.dk/studerende/brug-af-kilder-og-refworks#f5344afd-c052-4273-9ef0-53e60352dc89
+2026-01-20 17:44:46,226 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.aub.aau.dk:443
+2026-01-20 17:44:46,344 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.aub.aau.dk:443 "GET /studerende/brug-af-kilder-og-refworks HTTP/1.1" 200 None
+2026-01-20 17:44:46,345 - root - DEBUG - <module>:150 - Successfully fetched https://www.aub.aau.dk/studerende/brug-af-kilder-og-refworks#f5344afd-c052-4273-9ef0-53e60352dc89 (164302 bytes)
+2026-01-20 17:44:46,808 - root - DEBUG - <module>:161 - Found 96 link elements
+2026-01-20 17:44:46,809 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitetsbibliotek/
+2026-01-20 17:44:46,809 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborg_universitetsbibliotek/
+2026-01-20 17:44:46,809 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitetsbibliotek/
+2026-01-20 17:44:46,809 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborg_universitetsbibliotek/
+2026-01-20 17:44:46,809 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:46,809 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:46,810 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/mycompany/
+2026-01-20 17:44:46,810 - root - INFO - <module>:172 - Extracted 78 valid links from https://www.aub.aau.dk/studerende/brug-af-kilder-og-refworks#f5344afd-c052-4273-9ef0-53e60352dc89
+2026-01-20 17:44:46,810 - root - DEBUG - save_new_urls:100 - Processing 78 potential new URLs
+2026-01-20 17:44:46,880 - root - DEBUG - save_new_urls:114 - Found 3193 URLs to crawl, 362 already crawled
+2026-01-20 17:44:46,881 - root - INFO - save_new_urls:133 - Added 2 new URLs to queue
+2026-01-20 17:44:46,881 - root - DEBUG - save_new_urls:135 - Skipped 76 duplicate URLs
+2026-01-20 17:44:46,881 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:46,891 - root - DEBUG - grab_next_url:25 - Loaded timing data for 128 domains
+2026-01-20 17:44:46,918 - root - DEBUG - grab_next_url:37 - Found 3525 URLs in queue
+2026-01-20 17:44:46,918 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.studerende.aau.dk (last crawled 1.6s ago)
+2026-01-20 17:44:46,920 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3524 remaining
+2026-01-20 17:44:46,921 - root - INFO - <module>:132 - Processing URL: https://www.studerende.aau.dk/regler-og-praktisk/it
+2026-01-20 17:44:46,921 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.studerende.aau.dk/regler-og-praktisk/it
+2026-01-20 17:44:46,922 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.studerende.aau.dk:443
+2026-01-20 17:44:47,063 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.studerende.aau.dk:443 "GET /regler-og-praktisk/it HTTP/1.1" 200 None
+2026-01-20 17:44:47,064 - root - DEBUG - <module>:150 - Successfully fetched https://www.studerende.aau.dk/regler-og-praktisk/it (173152 bytes)
+2026-01-20 17:44:47,076 - root - DEBUG - <module>:161 - Found 92 link elements
+2026-01-20 17:44:47,077 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:47,077 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:47,077 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/mycompany/
+2026-01-20 17:44:47,077 - root - INFO - <module>:172 - Extracted 85 valid links from https://www.studerende.aau.dk/regler-og-praktisk/it
+2026-01-20 17:44:47,077 - root - DEBUG - save_new_urls:100 - Processing 85 potential new URLs
+2026-01-20 17:44:47,134 - root - DEBUG - save_new_urls:114 - Found 3192 URLs to crawl, 363 already crawled
+2026-01-20 17:44:47,134 - root - INFO - save_new_urls:133 - Added 2 new URLs to queue
+2026-01-20 17:44:47,134 - root - DEBUG - save_new_urls:135 - Skipped 83 duplicate URLs
+2026-01-20 17:44:47,135 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:47,143 - root - DEBUG - grab_next_url:25 - Loaded timing data for 128 domains
+2026-01-20 17:44:47,170 - root - DEBUG - grab_next_url:37 - Found 3526 URLs in queue
+2026-01-20 17:44:47,171 - root - DEBUG - grab_next_url:52 - Selected URL from domain refworks.proquest.com (last crawled 1768927487.2s ago)
+2026-01-20 17:44:47,173 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3525 remaining
+2026-01-20 17:44:47,174 - root - INFO - <module>:132 - Processing URL: https://refworks.proquest.com/
+2026-01-20 17:44:47,174 - root - DEBUG - <module>:143 - Making HTTP request to: https://refworks.proquest.com/
+2026-01-20 17:44:47,174 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): refworks.proquest.com:443
+2026-01-20 17:44:47,564 - urllib3.connectionpool - DEBUG - _make_request:544 - https://refworks.proquest.com:443 "GET / HTTP/1.1" 200 None
+2026-01-20 17:44:47,654 - root - DEBUG - <module>:150 - Successfully fetched https://refworks.proquest.com/ (89311 bytes)
+2026-01-20 17:44:48,112 - root - INFO - save_page_json:114 - Saved page content to page_101.json
+2026-01-20 17:44:48,112 - root - DEBUG - <module>:161 - Found 52 link elements
+2026-01-20 17:44:48,112 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://support.proquest.com
+2026-01-20 17:44:48,411 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://support.proquest.com
+2026-01-20 17:44:48,411 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://about.proquest.com
+2026-01-20 17:44:48,489 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://about.proquest.com
+2026-01-20 17:44:48,489 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://about.proquest.com/en/products-services/refworks/
+2026-01-20 17:44:48,489 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://about.proquest.com/en/products-services/refworks/
+2026-01-20 17:44:48,489 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://about.proquest.com/en/products-services/refworks/
+2026-01-20 17:44:48,489 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://clarivate.com
+2026-01-20 17:44:48,599 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://clarivate.com
+2026-01-20 17:44:48,599 - root - INFO - <module>:172 - Extracted 21 valid links from https://refworks.proquest.com/
+2026-01-20 17:44:48,599 - root - DEBUG - save_new_urls:100 - Processing 21 potential new URLs
+2026-01-20 17:44:48,658 - root - DEBUG - save_new_urls:114 - Found 3193 URLs to crawl, 364 already crawled
+2026-01-20 17:44:48,659 - root - INFO - save_new_urls:133 - Added 10 new URLs to queue
+2026-01-20 17:44:48,659 - root - DEBUG - save_new_urls:135 - Skipped 11 duplicate URLs
+2026-01-20 17:44:48,659 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:48,670 - root - DEBUG - grab_next_url:25 - Loaded timing data for 129 domains
+2026-01-20 17:44:48,698 - root - DEBUG - grab_next_url:37 - Found 3535 URLs in queue
+2026-01-20 17:44:48,698 - root - DEBUG - grab_next_url:52 - Selected URL from domain stopplagiat.nu (last crawled 1768927488.7s ago)
+2026-01-20 17:44:48,700 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3534 remaining
+2026-01-20 17:44:48,701 - root - INFO - <module>:132 - Processing URL: https://stopplagiat.nu/
+2026-01-20 17:44:48,701 - root - DEBUG - <module>:143 - Making HTTP request to: https://stopplagiat.nu/
+2026-01-20 17:44:48,702 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): stopplagiat.nu:443
+2026-01-20 17:44:48,741 - urllib3.connectionpool - DEBUG - _make_request:544 - https://stopplagiat.nu:443 "GET / HTTP/1.1" 455 None
+2026-01-20 17:44:48,741 - root - WARNING - <module>:147 - HTTP 455 for https://stopplagiat.nu/
+2026-01-20 17:44:48,741 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:48,749 - root - DEBUG - grab_next_url:25 - Loaded timing data for 130 domains
+2026-01-20 17:44:48,767 - root - DEBUG - grab_next_url:37 - Found 3534 URLs in queue
+2026-01-20 17:44:48,767 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.studerende.aau.dk (last crawled 1.8s ago)
+2026-01-20 17:44:48,770 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3533 remaining
+2026-01-20 17:44:48,771 - root - INFO - <module>:132 - Processing URL: https://www.studerende.aau.dk/regler/eksamenssnyd-og-plagiat
+2026-01-20 17:44:48,771 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.studerende.aau.dk/regler/eksamenssnyd-og-plagiat
+2026-01-20 17:44:48,771 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.studerende.aau.dk:443
+2026-01-20 17:44:49,156 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.studerende.aau.dk:443 "GET /regler/eksamenssnyd-og-plagiat HTTP/1.1" 307 None
+2026-01-20 17:44:49,211 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.studerende.aau.dk:443 "GET /regler-og-praktisk/regler/eksamensregler HTTP/1.1" 200 None
+2026-01-20 17:44:49,241 - root - DEBUG - <module>:150 - Successfully fetched https://www.studerende.aau.dk/regler/eksamenssnyd-og-plagiat (203289 bytes)
+2026-01-20 17:44:49,703 - root - INFO - save_page_json:114 - Saved page content to page_102.json
+2026-01-20 17:44:49,704 - root - DEBUG - <module>:161 - Found 101 link elements
+2026-01-20 17:44:49,705 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:49,705 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:49,705 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/mycompany/
+2026-01-20 17:44:49,705 - root - INFO - <module>:172 - Extracted 94 valid links from https://www.studerende.aau.dk/regler/eksamenssnyd-og-plagiat
+2026-01-20 17:44:49,705 - root - DEBUG - save_new_urls:100 - Processing 94 potential new URLs
+2026-01-20 17:44:49,772 - root - DEBUG - save_new_urls:114 - Found 3201 URLs to crawl, 366 already crawled
+2026-01-20 17:44:49,772 - root - INFO - save_new_urls:133 - Added 5 new URLs to queue
+2026-01-20 17:44:49,772 - root - DEBUG - save_new_urls:135 - Skipped 89 duplicate URLs
+2026-01-20 17:44:49,772 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:49,780 - root - DEBUG - grab_next_url:25 - Loaded timing data for 130 domains
+2026-01-20 17:44:49,799 - root - DEBUG - grab_next_url:37 - Found 3538 URLs in queue
+2026-01-20 17:44:49,799 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.en.aau.dk (last crawled 7.6s ago)
+2026-01-20 17:44:49,802 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3537 remaining
+2026-01-20 17:44:49,803 - root - INFO - <module>:132 - Processing URL: https://www.en.aau.dk/privacy-policy-cookies#main
+2026-01-20 17:44:49,803 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.en.aau.dk/privacy-policy-cookies#main
+2026-01-20 17:44:49,803 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.en.aau.dk:443
+2026-01-20 17:44:49,940 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.en.aau.dk:443 "GET /privacy-policy-cookies HTTP/1.1" 200 None
+2026-01-20 17:44:49,958 - root - DEBUG - <module>:150 - Successfully fetched https://www.en.aau.dk/privacy-policy-cookies#main (252202 bytes)
+2026-01-20 17:44:50,511 - root - INFO - save_page_json:114 - Saved page content to page_103.json
+2026-01-20 17:44:50,511 - root - DEBUG - <module>:161 - Found 95 link elements
+2026-01-20 17:44:50,512 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://aaudk.sharepoint.com
+2026-01-20 17:44:50,758 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://aaudk.sharepoint.com
+2026-01-20 17:44:50,758 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://aaudk.sharepoint.com/sites/persondata-lobby/
+2026-01-20 17:44:50,758 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://gdpr-info.eu
+2026-01-20 17:44:50,971 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://gdpr-info.eu
+2026-01-20 17:44:50,971 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://tools.google.com
+2026-01-20 17:44:51,171 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://tools.google.com
+2026-01-20 17:44:51,171 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://support.microsoft.com
+2026-01-20 17:44:51,349 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://support.microsoft.com
+2026-01-20 17:44:51,350 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://support.mozilla.org
+2026-01-20 17:44:51,700 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://support.mozilla.org
+2026-01-20 17:44:51,700 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://support.google.com
+2026-01-20 17:44:51,852 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://support.google.com
+2026-01-20 17:44:51,852 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.opera.com
+2026-01-20 17:44:52,037 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.opera.com
+2026-01-20 17:44:52,037 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://support.apple.com
+2026-01-20 17:44:52,131 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://support.apple.com
+2026-01-20 17:44:52,132 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.macromedia.com
+2026-01-20 17:44:52,559 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.macromedia.com
+2026-01-20 17:44:52,559 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://timeread.hubpages.com
+2026-01-20 17:44:53,633 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://timeread.hubpages.com
+2026-01-20 17:44:53,634 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/AalborgUniversitet/
+2026-01-20 17:44:53,635 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/InternationalStudentsAalborgUniversity
+2026-01-20 17:44:53,635 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.instagram.com/aalborguni/
+2026-01-20 17:44:53,635 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/school/aalborg-universitet/
+2026-01-20 17:44:53,635 - root - INFO - <module>:172 - Extracted 79 valid links from https://www.en.aau.dk/privacy-policy-cookies#main
+2026-01-20 17:44:53,636 - root - DEBUG - save_new_urls:100 - Processing 79 potential new URLs
+2026-01-20 17:44:53,700 - root - DEBUG - save_new_urls:114 - Found 3206 URLs to crawl, 367 already crawled
+2026-01-20 17:44:53,700 - root - INFO - save_new_urls:133 - Added 2 new URLs to queue
+2026-01-20 17:44:53,700 - root - DEBUG - save_new_urls:135 - Skipped 77 duplicate URLs
+2026-01-20 17:44:53,701 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:53,712 - root - DEBUG - grab_next_url:25 - Loaded timing data for 130 domains
+2026-01-20 17:44:53,739 - root - DEBUG - grab_next_url:37 - Found 3539 URLs in queue
+2026-01-20 17:44:53,739 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.aaudxp-cms.aau.dk (last crawled 22.1s ago)
+2026-01-20 17:44:53,741 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3538 remaining
+2026-01-20 17:44:53,742 - root - INFO - <module>:132 - Processing URL: https://www.aaudxp-cms.aau.dk/media/i2ueliqe/subject-access-request_form-eng.pdf
+2026-01-20 17:44:53,742 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.aaudxp-cms.aau.dk/media/i2ueliqe/subject-access-request_form-eng.pdf
+2026-01-20 17:44:53,743 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.aaudxp-cms.aau.dk:443
+2026-01-20 17:44:53,922 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.aaudxp-cms.aau.dk:443 "GET /media/i2ueliqe/subject-access-request_form-eng.pdf HTTP/1.1" 200 192838
+2026-01-20 17:44:54,033 - root - DEBUG - <module>:150 - Successfully fetched https://www.aaudxp-cms.aau.dk/media/i2ueliqe/subject-access-request_form-eng.pdf (192838 bytes)
+2026-01-20 17:44:54,046 - charset_normalizer - DEBUG - from_bytes:535 - Encoding detection: Unable to determine any suitable charset.
+2026-01-20 17:44:54,052 - charset_normalizer - DEBUG - from_bytes:535 - Encoding detection: Unable to determine any suitable charset.
+2026-01-20 17:44:54,053 - bs4.dammit - WARNING - __init__:825 - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2026-01-20 17:44:55,150 - root - INFO - save_page_json:114 - Saved page content to page_104.json
+2026-01-20 17:44:55,151 - root - DEBUG - <module>:161 - Found 0 link elements
+2026-01-20 17:44:55,151 - root - INFO - <module>:172 - Extracted 0 valid links from https://www.aaudxp-cms.aau.dk/media/i2ueliqe/subject-access-request_form-eng.pdf
+2026-01-20 17:44:55,151 - root - DEBUG - save_new_urls:100 - Processing 0 potential new URLs
+2026-01-20 17:44:55,222 - root - DEBUG - save_new_urls:114 - Found 3205 URLs to crawl, 368 already crawled
+2026-01-20 17:44:55,222 - root - DEBUG - save_new_urls:137 - No new URLs to add (0 were duplicates)
+2026-01-20 17:44:55,222 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:55,232 - root - DEBUG - grab_next_url:25 - Loaded timing data for 130 domains
+2026-01-20 17:44:55,233 - root - DEBUG - grab_next_url:37 - Found 3538 URLs in queue
+2026-01-20 17:44:55,233 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.aaudxp-cms.aau.dk (last crawled 1.5s ago)
+2026-01-20 17:44:55,237 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3537 remaining
+2026-01-20 17:44:55,237 - root - INFO - <module>:132 - Processing URL: https://www.aaudxp-cms.aau.dk/media/adqjwwpw/subject-access-request-third-party-form.pdf
+2026-01-20 17:44:55,237 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.aaudxp-cms.aau.dk/media/adqjwwpw/subject-access-request-third-party-form.pdf
+2026-01-20 17:44:55,238 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.aaudxp-cms.aau.dk:443
+2026-01-20 17:44:55,380 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.aaudxp-cms.aau.dk:443 "GET /media/adqjwwpw/subject-access-request-third-party-form.pdf HTTP/1.1" 200 477595
+2026-01-20 17:44:55,469 - root - DEBUG - <module>:150 - Successfully fetched https://www.aaudxp-cms.aau.dk/media/adqjwwpw/subject-access-request-third-party-form.pdf (477595 bytes)
+2026-01-20 17:44:55,494 - charset_normalizer - DEBUG - from_bytes:535 - Encoding detection: Unable to determine any suitable charset.
+2026-01-20 17:44:55,512 - charset_normalizer - DEBUG - from_bytes:535 - Encoding detection: Unable to determine any suitable charset.
+2026-01-20 17:44:55,515 - bs4.dammit - WARNING - __init__:825 - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2026-01-20 17:44:57,595 - root - INFO - save_page_json:114 - Saved page content to page_105.json
+2026-01-20 17:44:57,595 - root - DEBUG - <module>:161 - Found 0 link elements
+2026-01-20 17:44:57,596 - root - INFO - <module>:172 - Extracted 0 valid links from https://www.aaudxp-cms.aau.dk/media/adqjwwpw/subject-access-request-third-party-form.pdf
+2026-01-20 17:44:57,596 - root - DEBUG - save_new_urls:100 - Processing 0 potential new URLs
+2026-01-20 17:44:57,657 - root - DEBUG - save_new_urls:114 - Found 3204 URLs to crawl, 369 already crawled
+2026-01-20 17:44:57,657 - root - DEBUG - save_new_urls:137 - No new URLs to add (0 were duplicates)
+2026-01-20 17:44:57,658 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:57,665 - root - DEBUG - grab_next_url:25 - Loaded timing data for 130 domains
+2026-01-20 17:44:57,667 - root - DEBUG - grab_next_url:37 - Found 3537 URLs in queue
+2026-01-20 17:44:57,667 - root - DEBUG - grab_next_url:52 - Selected URL from domain lifeindenmark.borger.dk (last crawled 1306.8s ago)
+2026-01-20 17:44:57,669 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3536 remaining
+2026-01-20 17:44:57,670 - root - INFO - <module>:132 - Processing URL: https://lifeindenmark.borger.dk/
+2026-01-20 17:44:57,670 - root - DEBUG - <module>:143 - Making HTTP request to: https://lifeindenmark.borger.dk/
+2026-01-20 17:44:57,671 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): lifeindenmark.borger.dk:443
+2026-01-20 17:44:57,819 - urllib3.connectionpool - DEBUG - _make_request:544 - https://lifeindenmark.borger.dk:443 "GET / HTTP/1.1" 200 55345
+2026-01-20 17:44:57,832 - root - DEBUG - <module>:150 - Successfully fetched https://lifeindenmark.borger.dk/ (55345 bytes)
+2026-01-20 17:44:58,367 - root - INFO - save_page_json:114 - Saved page content to page_106.json
+2026-01-20 17:44:58,367 - root - DEBUG - <module>:161 - Found 81 link elements
+2026-01-20 17:44:58,367 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://post.borger.dk
+2026-01-20 17:44:58,456 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://post.borger.dk
+2026-01-20 17:44:58,457 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.borger.dk
+2026-01-20 17:44:58,545 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.borger.dk
+2026-01-20 17:44:58,545 - root - INFO - <module>:172 - Extracted 81 valid links from https://lifeindenmark.borger.dk/
+2026-01-20 17:44:58,546 - root - DEBUG - save_new_urls:100 - Processing 81 potential new URLs
+2026-01-20 17:44:58,606 - root - DEBUG - save_new_urls:114 - Found 3203 URLs to crawl, 370 already crawled
+2026-01-20 17:44:58,606 - root - INFO - save_new_urls:133 - Added 50 new URLs to queue
+2026-01-20 17:44:58,606 - root - DEBUG - save_new_urls:135 - Skipped 31 duplicate URLs
+2026-01-20 17:44:58,606 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:44:58,616 - root - DEBUG - grab_next_url:25 - Loaded timing data for 130 domains
+2026-01-20 17:44:58,642 - root - DEBUG - grab_next_url:37 - Found 3586 URLs in queue
+2026-01-20 17:44:58,642 - root - DEBUG - grab_next_url:52 - Selected URL from domain gdpr-info.eu (last crawled 1768927498.6s ago)
+2026-01-20 17:44:58,645 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3585 remaining
+2026-01-20 17:44:58,646 - root - INFO - <module>:132 - Processing URL: https://gdpr-info.eu/chapter-3/
+2026-01-20 17:44:58,646 - root - DEBUG - <module>:143 - Making HTTP request to: https://gdpr-info.eu/chapter-3/
+2026-01-20 17:44:58,647 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): gdpr-info.eu:443
+2026-01-20 17:44:58,764 - urllib3.connectionpool - DEBUG - _make_request:544 - https://gdpr-info.eu:443 "GET /chapter-3/ HTTP/1.1" 200 None
+2026-01-20 17:44:58,778 - root - DEBUG - <module>:150 - Successfully fetched https://gdpr-info.eu/chapter-3/ (78728 bytes)
+2026-01-20 17:44:59,335 - root - INFO - save_page_json:114 - Saved page content to page_107.json
+2026-01-20 17:44:59,336 - root - DEBUG - <module>:161 - Found 144 link elements
+2026-01-20 17:44:59,336 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://dsgvo-gesetz.de
+2026-01-20 17:44:59,521 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://dsgvo-gesetz.de
+2026-01-20 17:44:59,521 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://ai-act-law.eu
+2026-01-20 17:44:59,706 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://ai-act-law.eu
+2026-01-20 17:44:59,707 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://data-act-law.eu
+2026-01-20 17:44:59,911 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://data-act-law.eu
+2026-01-20 17:44:59,912 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://gdpr-info.eu/gf/?TB_iframe=true&height=320
+2026-01-20 17:44:59,912 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.intersoft-consulting.de
+2026-01-20 17:45:00,066 - root - WARNING - can_fetch:43 - Could not read robots.txt for https://www.intersoft-consulting.de: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)>
+2026-01-20 17:45:00,067 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.xing.com
+2026-01-20 17:45:00,222 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.xing.com
+2026-01-20 17:45:00,222 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.linkedin.com/company/intersoft-consulting-services-ag
+2026-01-20 17:45:00,223 - root - INFO - <module>:172 - Extracted 142 valid links from https://gdpr-info.eu/chapter-3/
+2026-01-20 17:45:00,223 - root - DEBUG - save_new_urls:100 - Processing 142 potential new URLs
+2026-01-20 17:45:00,279 - root - DEBUG - save_new_urls:114 - Found 3251 URLs to crawl, 371 already crawled
+2026-01-20 17:45:00,279 - root - INFO - save_new_urls:133 - Added 120 new URLs to queue
+2026-01-20 17:45:00,279 - root - DEBUG - save_new_urls:135 - Skipped 22 duplicate URLs
+2026-01-20 17:45:00,280 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:45:00,289 - root - DEBUG - grab_next_url:25 - Loaded timing data for 131 domains
+2026-01-20 17:45:00,320 - root - DEBUG - grab_next_url:37 - Found 3705 URLs in queue
+2026-01-20 17:45:00,320 - root - DEBUG - grab_next_url:52 - Selected URL from domain support.microsoft.com (last crawled 1257.4s ago)
+2026-01-20 17:45:00,322 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 3704 remaining
+2026-01-20 17:45:00,323 - root - INFO - <module>:132 - Processing URL: https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies#ie=ie-11
+2026-01-20 17:45:00,323 - root - DEBUG - <module>:143 - Making HTTP request to: https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies#ie=ie-11
+2026-01-20 17:45:00,324 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): support.microsoft.com:443
+2026-01-20 17:45:00,456 - urllib3.connectionpool - DEBUG - _make_request:544 - https://support.microsoft.com:443 "GET /en-us/help/17442/windows-internet-explorer-delete-manage-cookies HTTP/1.1" 301 0
+2026-01-20 17:45:00,482 - urllib3.connectionpool - DEBUG - _make_request:544 - https://support.microsoft.com:443 "GET /en-US/topic/168dab11-0753-043d-7c16-ede5947fc64d HTTP/1.1" 301 0
+2026-01-20 17:45:00,536 - urllib3.connectionpool - DEBUG - _make_request:544 - https://support.microsoft.com:443 "GET /en-us/windows/manage-cookies-in-microsoft-edge-view-allow-block-delete-and-use-168dab11-0753-043d-7c16-ede5947fc64d HTTP/1.1" 200 None
+2026-01-20 17:45:00,609 - root - DEBUG - <module>:150 - Successfully fetched https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies#ie=ie-11 (188973 bytes)
+2026-01-20 17:45:01,243 - root - INFO - save_page_json:114 - Saved page content to page_108.json
+2026-01-20 17:45:01,243 - root - DEBUG - <module>:161 - Found 232 link elements
+2026-01-20 17:45:01,244 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.microsoft.com
+2026-01-20 17:45:01,350 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.microsoft.com
+2026-01-20 17:45:01,350 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://support.xbox.com
+2026-01-20 17:45:01,836 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://support.xbox.com
+2026-01-20 17:45:01,837 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://docs.microsoft.com
+2026-01-20 17:45:02,048 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://docs.microsoft.com
+2026-01-20 17:45:02,049 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://learn.microsoft.com
+2026-01-20 17:45:02,154 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://learn.microsoft.com
+2026-01-20 17:45:02,154 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://answers.microsoft.com
+2026-01-20 17:45:02,588 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://answers.microsoft.com
+2026-01-20 17:45:02,588 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://portal.office.com
+2026-01-20 17:45:03,280 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://portal.office.com
+2026-01-20 17:45:03,280 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://go.microsoft.com
+2026-01-20 17:45:03,520 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://go.microsoft.com
+2026-01-20 17:45:03,520 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://go.microsoft.com/fwlink/?linkid=2224585
+2026-01-20 17:45:03,520 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://developer.microsoft.com
+2026-01-20 17:45:04,050 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://developer.microsoft.com
+2026-01-20 17:45:04,051 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://go.microsoft.com/fwlink/?linkid=849747
+2026-01-20 17:45:04,051 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://copilot.microsoft.com
+2026-01-20 17:45:04,183 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://copilot.microsoft.com
+2026-01-20 17:45:04,183 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://copilot.microsoft.com/
+2026-01-20 17:45:04,184 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://www.xbox.com
+2026-01-20 17:45:04,329 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://www.xbox.com
+2026-01-20 17:45:04,330 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://apps.microsoft.com
+2026-01-20 17:45:04,518 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://apps.microsoft.com
+2026-01-20 17:45:04,519 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://azure.microsoft.com
+2026-01-20 17:45:04,660 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://azure.microsoft.com
+2026-01-20 17:45:04,661 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://techcommunity.microsoft.com
+2026-01-20 17:45:04,985 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://techcommunity.microsoft.com
+2026-01-20 17:45:04,985 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://marketplace.microsoft.com
+2026-01-20 17:45:05,080 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://marketplace.microsoft.com
+2026-01-20 17:45:05,080 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://visualstudio.microsoft.com
+2026-01-20 17:45:05,182 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://visualstudio.microsoft.com
+2026-01-20 17:45:05,183 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://unlocked.microsoft.com
+2026-01-20 17:45:05,276 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://unlocked.microsoft.com
+2026-01-20 17:45:05,276 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://unlocked.microsoft.com/
+2026-01-20 17:45:05,277 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsupport.microsoft.com%2Fen-us%2Fwindows%2Fmanage-cookies-in-microsoft-edge-view-allow-block-delete-and-use-168dab11-0753-043d-7c16-ede5947fc64d
+2026-01-20 17:45:05,277 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://linkedin.com
+2026-01-20 17:45:05,711 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://linkedin.com
+2026-01-20 17:45:05,711 - root - INFO - can_fetch:52 - Robots.txt disallows crawling: https://linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsupport.microsoft.com%2Fen-us%2Fwindows%2Fmanage-cookies-in-microsoft-edge-view-allow-block-delete-and-use-168dab11-0753-043d-7c16-ede5947fc64d&title=Manage%20cookies%20in%20Microsoft%20Edge%3A%20View,%20allow,%20block,%20delete%20and%20use
+2026-01-20 17:45:05,711 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://insider.windows.com
+2026-01-20 17:45:06,676 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://insider.windows.com
+2026-01-20 17:45:06,676 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://insider.office.com
+2026-01-20 17:45:10,045 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://insider.office.com
+2026-01-20 17:45:10,045 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://privacy.microsoft.com
+2026-01-20 17:45:10,599 - root - DEBUG - can_fetch:40 - Successfully loaded robots.txt for https://privacy.microsoft.com
+2026-01-20 17:45:10,600 - root - DEBUG - can_fetch:37 - Reading robots.txt for domain: https://account.microsoft.com

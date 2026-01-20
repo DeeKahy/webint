@@ -1,0 +1,292 @@
+2026-01-20 17:25:48,402 - root - INFO - setup_logging:57 - Logging to file: logs\crawler_20260120_172548.log
+2026-01-20 17:25:48,406 - root - INFO - <module>:59 - === Web Crawler Starting ===
+2026-01-20 17:25:48,407 - root - INFO - <module>:89 - Starting with 2727 URLs in queue
+2026-01-20 17:25:48,407 - root - INFO - <module>:97 - Starting crawler main loop
+2026-01-20 17:25:48,407 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:25:48,407 - root - DEBUG - grab_next_url:25 - Loaded timing data for 113 domains
+2026-01-20 17:25:48,408 - root - DEBUG - grab_next_url:37 - Found 2727 URLs in queue
+2026-01-20 17:25:48,408 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.aau.dk (last crawled 65.4s ago)
+2026-01-20 17:25:48,410 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 2726 remaining
+2026-01-20 17:25:48,411 - root - INFO - <module>:132 - Processing URL: https://www.aau.dk/om-websitet#main
+2026-01-20 17:25:48,411 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.aau.dk/om-websitet#main
+2026-01-20 17:25:48,413 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.aau.dk:443
+2026-01-20 17:25:48,598 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.aau.dk:443 "GET /om-websitet HTTP/1.1" 200 None
+2026-01-20 17:25:48,616 - root - DEBUG - <module>:150 - Successfully fetched https://www.aau.dk/om-websitet#main (225879 bytes)
+2026-01-20 17:25:48,623 - root - ERROR - <module>:185 - Unexpected error crawling https://www.aau.dk/om-websitet#main: [WinError 3] The system cannot find the path specified: '../data/processed'
+2026-01-20 17:25:48,623 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:25:48,624 - root - DEBUG - grab_next_url:25 - Loaded timing data for 113 domains
+2026-01-20 17:25:48,625 - root - DEBUG - grab_next_url:37 - Found 2726 URLs in queue
+2026-01-20 17:25:48,625 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.2s since last crawl
+2026-01-20 17:25:48,625 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.2s since last crawl
+2026-01-20 17:25:48,625 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.2s since last crawl
+2026-01-20 17:25:48,625 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.studerende.aau.dk (last crawled 65.2s ago)
+2026-01-20 17:25:48,627 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 2725 remaining
+2026-01-20 17:25:48,628 - root - INFO - <module>:132 - Processing URL: https://www.studerende.aau.dk/regler-og-praktisk/undervisning/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/intelligent-reliable-systems-civilingenior
+2026-01-20 17:25:48,628 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.studerende.aau.dk/regler-og-praktisk/undervisning/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/intelligent-reliable-systems-civilingenior
+2026-01-20 17:25:48,629 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.studerende.aau.dk:443
+2026-01-20 17:25:49,002 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.studerende.aau.dk:443 "GET /regler-og-praktisk/undervisning/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/intelligent-reliable-systems-civilingenior HTTP/1.1" 307 None
+2026-01-20 17:25:49,047 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.studerende.aau.dk:443 "GET /regler-og-praktisk/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/intelligent-reliable-systems-civilingenior HTTP/1.1" 200 None
+2026-01-20 17:25:49,065 - root - DEBUG - <module>:150 - Successfully fetched https://www.studerende.aau.dk/regler-og-praktisk/undervisning/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/intelligent-reliable-systems-civilingenior (212158 bytes)
+2026-01-20 17:25:49,074 - root - ERROR - <module>:185 - Unexpected error crawling https://www.studerende.aau.dk/regler-og-praktisk/undervisning/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/intelligent-reliable-systems-civilingenior: [WinError 3] The system cannot find the path specified: '../data/processed'
+2026-01-20 17:25:49,074 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:25:49,075 - root - DEBUG - grab_next_url:25 - Loaded timing data for 113 domains
+2026-01-20 17:25:49,076 - root - DEBUG - grab_next_url:37 - Found 2725 URLs in queue
+2026-01-20 17:25:49,076 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.7s since last crawl
+2026-01-20 17:25:49,076 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.7s since last crawl
+2026-01-20 17:25:49,076 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.7s since last crawl
+2026-01-20 17:25:49,076 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.en.aau.dk (last crawled 66.2s ago)
+2026-01-20 17:25:49,078 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 2724 remaining
+2026-01-20 17:25:49,079 - root - INFO - <module>:132 - Processing URL: https://www.en.aau.dk/about-aau/profile/ranking/aau-ranking
+2026-01-20 17:25:49,079 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.en.aau.dk/about-aau/profile/ranking/aau-ranking
+2026-01-20 17:25:49,079 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.en.aau.dk:443
+2026-01-20 17:25:49,211 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.en.aau.dk:443 "GET /about-aau/profile/ranking/aau-ranking HTTP/1.1" 200 None
+2026-01-20 17:25:49,212 - root - DEBUG - <module>:150 - Successfully fetched https://www.en.aau.dk/about-aau/profile/ranking/aau-ranking (220002 bytes)
+2026-01-20 17:25:49,226 - root - ERROR - <module>:185 - Unexpected error crawling https://www.en.aau.dk/about-aau/profile/ranking/aau-ranking: [WinError 3] The system cannot find the path specified: '../data/processed'
+2026-01-20 17:25:49,227 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:25:49,227 - root - DEBUG - grab_next_url:25 - Loaded timing data for 113 domains
+2026-01-20 17:25:49,228 - root - DEBUG - grab_next_url:37 - Found 2724 URLs in queue
+2026-01-20 17:25:49,228 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.8s since last crawl
+2026-01-20 17:25:49,228 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.8s since last crawl
+2026-01-20 17:25:49,228 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.8s since last crawl
+2026-01-20 17:25:49,228 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.forskningsservice.aau.dk (last crawled 1768926349.2s ago)
+2026-01-20 17:25:49,230 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 2723 remaining
+2026-01-20 17:25:49,231 - root - INFO - <module>:132 - Processing URL: https://www.forskningsservice.aau.dk/aau-missionssekretariat
+2026-01-20 17:25:49,231 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.forskningsservice.aau.dk/aau-missionssekretariat
+2026-01-20 17:25:49,231 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.forskningsservice.aau.dk:443
+2026-01-20 17:25:49,396 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.forskningsservice.aau.dk:443 "GET /aau-missionssekretariat HTTP/1.1" 200 None
+2026-01-20 17:25:49,397 - root - DEBUG - <module>:150 - Successfully fetched https://www.forskningsservice.aau.dk/aau-missionssekretariat (143914 bytes)
+2026-01-20 17:25:49,406 - root - ERROR - <module>:185 - Unexpected error crawling https://www.forskningsservice.aau.dk/aau-missionssekretariat: [WinError 3] The system cannot find the path specified: '../data/processed'
+2026-01-20 17:25:49,407 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:25:49,407 - root - DEBUG - grab_next_url:25 - Loaded timing data for 114 domains
+2026-01-20 17:25:49,408 - root - DEBUG - grab_next_url:37 - Found 2723 URLs in queue
+2026-01-20 17:25:49,408 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 1.0s since last crawl
+2026-01-20 17:25:49,408 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 1.0s since last crawl
+2026-01-20 17:25:49,408 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 1.0s since last crawl
+2026-01-20 17:25:49,408 - root - DEBUG - grab_next_url:52 - Selected URL from domain hbr.org (last crawled 1768926349.4s ago)
+2026-01-20 17:25:49,410 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 2722 remaining
+2026-01-20 17:25:49,411 - root - INFO - <module>:132 - Processing URL: https://hbr.org/2013/10/special-forces-innovation-how-darpa-attacks-problems
+2026-01-20 17:25:49,411 - root - DEBUG - <module>:143 - Making HTTP request to: https://hbr.org/2013/10/special-forces-innovation-how-darpa-attacks-problems
+2026-01-20 17:25:49,412 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): hbr.org:443
+2026-01-20 17:25:50,191 - urllib3.connectionpool - DEBUG - _make_request:544 - https://hbr.org:443 "GET /2013/10/special-forces-innovation-how-darpa-attacks-problems HTTP/1.1" 200 None
+2026-01-20 17:25:50,269 - root - DEBUG - <module>:150 - Successfully fetched https://hbr.org/2013/10/special-forces-innovation-how-darpa-attacks-problems (189497 bytes)
+2026-01-20 17:25:50,278 - root - ERROR - <module>:185 - Unexpected error crawling https://hbr.org/2013/10/special-forces-innovation-how-darpa-attacks-problems: [WinError 3] The system cannot find the path specified: '../data/processed'
+2026-01-20 17:25:50,278 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:25:50,278 - root - DEBUG - grab_next_url:25 - Loaded timing data for 115 domains
+2026-01-20 17:25:50,279 - root - DEBUG - grab_next_url:37 - Found 2722 URLs in queue
+2026-01-20 17:25:50,279 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.aau.dk (last crawled 1.9s ago)
+2026-01-20 17:25:50,281 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 2721 remaining
+2026-01-20 17:25:50,282 - root - INFO - <module>:132 - Processing URL: https://www.aau.dk/om-cookies#main
+2026-01-20 17:25:50,282 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.aau.dk/om-cookies#main
+2026-01-20 17:25:50,283 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.aau.dk:443
+2026-01-20 17:25:50,408 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.aau.dk:443 "GET /om-cookies HTTP/1.1" 200 None
+2026-01-20 17:25:50,426 - root - DEBUG - <module>:150 - Successfully fetched https://www.aau.dk/om-cookies#main (314215 bytes)
+2026-01-20 17:25:50,438 - root - ERROR - <module>:185 - Unexpected error crawling https://www.aau.dk/om-cookies#main: [WinError 3] The system cannot find the path specified: '../data/processed'
+2026-01-20 17:25:50,438 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:25:50,438 - root - DEBUG - grab_next_url:25 - Loaded timing data for 115 domains
+2026-01-20 17:25:50,440 - root - DEBUG - grab_next_url:37 - Found 2721 URLs in queue
+2026-01-20 17:25:50,440 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.2s since last crawl
+2026-01-20 17:25:50,440 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.2s since last crawl
+2026-01-20 17:25:50,440 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.2s since last crawl
+2026-01-20 17:25:50,440 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.studerende.aau.dk (last crawled 1.8s ago)
+2026-01-20 17:25:50,442 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 2720 remaining
+2026-01-20 17:25:50,443 - root - INFO - <module>:132 - Processing URL: https://www.studerende.aau.dk/regler-og-praktisk/undervisning/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/international-virksomhedskommunika-tion-i-spansk-kandidat
+2026-01-20 17:25:50,443 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.studerende.aau.dk/regler-og-praktisk/undervisning/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/international-virksomhedskommunika-tion-i-spansk-kandidat
+2026-01-20 17:25:50,443 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.studerende.aau.dk:443
+2026-01-20 17:25:50,845 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.studerende.aau.dk:443 "GET /regler-og-praktisk/undervisning/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/international-virksomhedskommunika-tion-i-spansk-kandidat HTTP/1.1" 307 None
+2026-01-20 17:25:50,894 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.studerende.aau.dk:443 "GET /regler-og-praktisk/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/international-virksomhedskommunika-tion-i-spansk-kandidat HTTP/1.1" 200 None
+2026-01-20 17:25:50,912 - root - DEBUG - <module>:150 - Successfully fetched https://www.studerende.aau.dk/regler-og-praktisk/undervisning/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/international-virksomhedskommunika-tion-i-spansk-kandidat (200926 bytes)
+2026-01-20 17:25:50,924 - root - ERROR - <module>:185 - Unexpected error crawling https://www.studerende.aau.dk/regler-og-praktisk/undervisning/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/international-virksomhedskommunika-tion-i-spansk-kandidat: [WinError 3] The system cannot find the path specified: '../data/processed'
+2026-01-20 17:25:50,924 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:25:50,925 - root - DEBUG - grab_next_url:25 - Loaded timing data for 115 domains
+2026-01-20 17:25:50,925 - root - DEBUG - grab_next_url:37 - Found 2720 URLs in queue
+2026-01-20 17:25:50,926 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.6s since last crawl
+2026-01-20 17:25:50,926 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.6s since last crawl
+2026-01-20 17:25:50,926 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.6s since last crawl
+2026-01-20 17:25:50,926 - root - DEBUG - grab_next_url:52 - Selected URL from domain marianamazzucato.com (last crawled 1768926350.9s ago)
+2026-01-20 17:25:50,928 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 2719 remaining
+2026-01-20 17:25:50,928 - root - INFO - <module>:132 - Processing URL: https://marianamazzucato.com/research/journal-articles
+2026-01-20 17:25:50,928 - root - DEBUG - <module>:143 - Making HTTP request to: https://marianamazzucato.com/research/journal-articles
+2026-01-20 17:25:50,929 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): marianamazzucato.com:443
+2026-01-20 17:25:51,328 - urllib3.connectionpool - DEBUG - _make_request:544 - https://marianamazzucato.com:443 "GET /research/journal-articles HTTP/1.1" 200 None
+2026-01-20 17:25:51,332 - root - DEBUG - <module>:150 - Successfully fetched https://marianamazzucato.com/research/journal-articles (139131 bytes)
+2026-01-20 17:25:51,334 - root - ERROR - <module>:185 - Unexpected error crawling https://marianamazzucato.com/research/journal-articles: [WinError 3] The system cannot find the path specified: '../data/processed'
+2026-01-20 17:25:51,334 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:25:51,334 - root - DEBUG - grab_next_url:25 - Loaded timing data for 116 domains
+2026-01-20 17:25:51,335 - root - DEBUG - grab_next_url:37 - Found 2719 URLs in queue
+2026-01-20 17:25:51,335 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.aau.dk (last crawled 1.1s ago)
+2026-01-20 17:25:51,337 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 2718 remaining
+2026-01-20 17:25:51,338 - root - INFO - <module>:132 - Processing URL: https://www.aau.dk/om-cookies/
+2026-01-20 17:25:51,338 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.aau.dk/om-cookies/
+2026-01-20 17:25:51,338 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.aau.dk:443
+2026-01-20 17:25:51,427 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.aau.dk:443 "GET /om-cookies/ HTTP/1.1" 308 None
+2026-01-20 17:25:51,488 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.aau.dk:443 "GET /om-cookies HTTP/1.1" 200 None
+2026-01-20 17:25:51,506 - root - DEBUG - <module>:150 - Successfully fetched https://www.aau.dk/om-cookies/ (314215 bytes)
+2026-01-20 17:25:51,518 - root - ERROR - <module>:185 - Unexpected error crawling https://www.aau.dk/om-cookies/: [WinError 3] The system cannot find the path specified: '../data/processed'
+2026-01-20 17:25:51,518 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:25:51,518 - root - DEBUG - grab_next_url:25 - Loaded timing data for 116 domains
+2026-01-20 17:25:51,519 - root - DEBUG - grab_next_url:37 - Found 2718 URLs in queue
+2026-01-20 17:25:51,519 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.2s since last crawl
+2026-01-20 17:25:51,519 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.2s since last crawl
+2026-01-20 17:25:51,519 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.2s since last crawl
+2026-01-20 17:25:51,519 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.studerende.aau.dk (last crawled 1.1s ago)
+2026-01-20 17:25:51,521 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 2717 remaining
+2026-01-20 17:25:51,522 - root - INFO - <module>:132 - Processing URL: https://www.studerende.aau.dk/regler-og-praktisk/undervisning/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/kapitalmarkedet-revision-cand-merc-aud
+2026-01-20 17:25:51,522 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.studerende.aau.dk/regler-og-praktisk/undervisning/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/kapitalmarkedet-revision-cand-merc-aud
+2026-01-20 17:25:51,525 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.studerende.aau.dk:443
+2026-01-20 17:25:51,912 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.studerende.aau.dk:443 "GET /regler-og-praktisk/undervisning/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/kapitalmarkedet-revision-cand-merc-aud HTTP/1.1" 307 None
+2026-01-20 17:25:51,953 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.studerende.aau.dk:443 "GET /regler-og-praktisk/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/kapitalmarkedet-revision-cand-merc-aud HTTP/1.1" 200 None
+2026-01-20 17:25:51,971 - root - DEBUG - <module>:150 - Successfully fetched https://www.studerende.aau.dk/regler-og-praktisk/undervisning/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/kapitalmarkedet-revision-cand-merc-aud (169563 bytes)
+2026-01-20 17:25:51,979 - root - ERROR - <module>:185 - Unexpected error crawling https://www.studerende.aau.dk/regler-og-praktisk/undervisning/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/kapitalmarkedet-revision-cand-merc-aud: [WinError 3] The system cannot find the path specified: '../data/processed'
+2026-01-20 17:25:51,979 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:25:51,980 - root - DEBUG - grab_next_url:25 - Loaded timing data for 116 domains
+2026-01-20 17:25:51,980 - root - DEBUG - grab_next_url:37 - Found 2717 URLs in queue
+2026-01-20 17:25:51,980 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.6s since last crawl
+2026-01-20 17:25:51,980 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.6s since last crawl
+2026-01-20 17:25:51,981 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.6s since last crawl
+2026-01-20 17:25:51,981 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.sammenommissioner.aau.dk (last crawled 68.8s ago)
+2026-01-20 17:25:51,983 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 2716 remaining
+2026-01-20 17:25:51,984 - root - INFO - <module>:132 - Processing URL: https://www.sammenommissioner.aau.dk/nu-er-missionerne-i-gang-n92278
+2026-01-20 17:25:51,984 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.sammenommissioner.aau.dk/nu-er-missionerne-i-gang-n92278
+2026-01-20 17:25:51,984 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.sammenommissioner.aau.dk:443
+2026-01-20 17:25:52,042 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.sammenommissioner.aau.dk:443 "GET /nu-er-missionerne-i-gang-n92278 HTTP/1.1" 301 17
+2026-01-20 17:25:52,042 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.missioner.aau.dk:443
+2026-01-20 17:25:52,204 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.missioner.aau.dk:443 "GET /nu-er-missionerne-i-gang-n92278 HTTP/1.1" 200 None
+2026-01-20 17:25:52,205 - root - DEBUG - <module>:150 - Successfully fetched https://www.sammenommissioner.aau.dk/nu-er-missionerne-i-gang-n92278 (123302 bytes)
+2026-01-20 17:25:52,210 - root - ERROR - <module>:185 - Unexpected error crawling https://www.sammenommissioner.aau.dk/nu-er-missionerne-i-gang-n92278: [WinError 3] The system cannot find the path specified: '../data/processed'
+2026-01-20 17:25:52,211 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:25:52,211 - root - DEBUG - grab_next_url:25 - Loaded timing data for 116 domains
+2026-01-20 17:25:52,212 - root - DEBUG - grab_next_url:37 - Found 2716 URLs in queue
+2026-01-20 17:25:52,212 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.9s since last crawl
+2026-01-20 17:25:52,212 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.9s since last crawl
+2026-01-20 17:25:52,212 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.9s since last crawl
+2026-01-20 17:25:52,212 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.en.aau.dk (last crawled 3.1s ago)
+2026-01-20 17:25:52,214 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 2715 remaining
+2026-01-20 17:25:52,215 - root - INFO - <module>:132 - Processing URL: https://www.en.aau.dk/about-aau/profile/sustainability#main
+2026-01-20 17:25:52,215 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.en.aau.dk/about-aau/profile/sustainability#main
+2026-01-20 17:25:52,216 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.en.aau.dk:443
+2026-01-20 17:25:52,332 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.en.aau.dk:443 "GET /about-aau/profile/sustainability HTTP/1.1" 200 None
+2026-01-20 17:25:52,350 - root - DEBUG - <module>:150 - Successfully fetched https://www.en.aau.dk/about-aau/profile/sustainability#main (209962 bytes)
+2026-01-20 17:25:52,360 - root - ERROR - <module>:185 - Unexpected error crawling https://www.en.aau.dk/about-aau/profile/sustainability#main: [WinError 3] The system cannot find the path specified: '../data/processed'
+2026-01-20 17:25:52,360 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:25:52,361 - root - DEBUG - grab_next_url:25 - Loaded timing data for 116 domains
+2026-01-20 17:25:52,361 - root - DEBUG - grab_next_url:37 - Found 2715 URLs in queue
+2026-01-20 17:25:52,362 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.aau.dk (last crawled 1.0s ago)
+2026-01-20 17:25:52,364 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 2714 remaining
+2026-01-20 17:25:52,364 - root - INFO - <module>:132 - Processing URL: https://www.aau.dk/om-aau/kontakt/whistleblowerordning#main
+2026-01-20 17:25:52,364 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.aau.dk/om-aau/kontakt/whistleblowerordning#main
+2026-01-20 17:25:52,365 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.aau.dk:443
+2026-01-20 17:25:52,480 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.aau.dk:443 "GET /om-aau/kontakt/whistleblowerordning HTTP/1.1" 200 None
+2026-01-20 17:25:52,497 - root - DEBUG - <module>:150 - Successfully fetched https://www.aau.dk/om-aau/kontakt/whistleblowerordning#main (261753 bytes)
+2026-01-20 17:25:52,507 - root - ERROR - <module>:185 - Unexpected error crawling https://www.aau.dk/om-aau/kontakt/whistleblowerordning#main: [WinError 3] The system cannot find the path specified: '../data/processed'
+2026-01-20 17:25:52,507 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:25:52,507 - root - DEBUG - grab_next_url:25 - Loaded timing data for 116 domains
+2026-01-20 17:25:52,517 - root - DEBUG - grab_next_url:37 - Found 2714 URLs in queue
+2026-01-20 17:25:52,517 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.2s since last crawl
+2026-01-20 17:25:52,517 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.2s since last crawl
+2026-01-20 17:25:52,518 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.2s since last crawl
+2026-01-20 17:25:52,518 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.aaudxp-cms.aau.dk (last crawled 88.2s ago)
+2026-01-20 17:25:52,520 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 2713 remaining
+2026-01-20 17:25:52,521 - root - INFO - <module>:132 - Processing URL: https://www.aaudxp-cms.aau.dk/media/xrppul2y/aau_sustainability_report_2022-2023.pdf
+2026-01-20 17:25:52,521 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.aaudxp-cms.aau.dk/media/xrppul2y/aau_sustainability_report_2022-2023.pdf
+2026-01-20 17:25:52,521 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.aaudxp-cms.aau.dk:443
+2026-01-20 17:25:52,723 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.aaudxp-cms.aau.dk:443 "GET /media/xrppul2y/aau_sustainability_report_2022-2023.pdf HTTP/1.1" 200 7775215
+2026-01-20 17:25:52,885 - root - DEBUG - <module>:150 - Successfully fetched https://www.aaudxp-cms.aau.dk/media/xrppul2y/aau_sustainability_report_2022-2023.pdf (7775215 bytes)
+2026-01-20 17:25:53,314 - charset_normalizer - DEBUG - from_bytes:535 - Encoding detection: Unable to determine any suitable charset.
+2026-01-20 17:25:53,642 - charset_normalizer - DEBUG - from_bytes:535 - Encoding detection: Unable to determine any suitable charset.
+2026-01-20 17:25:53,686 - bs4.dammit - WARNING - __init__:825 - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2026-01-20 17:25:53,736 - root - ERROR - <module>:185 - Unexpected error crawling https://www.aaudxp-cms.aau.dk/media/xrppul2y/aau_sustainability_report_2022-2023.pdf: [WinError 3] The system cannot find the path specified: '../data/processed'
+2026-01-20 17:25:53,737 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:25:53,737 - root - DEBUG - grab_next_url:25 - Loaded timing data for 116 domains
+2026-01-20 17:25:53,738 - root - DEBUG - grab_next_url:37 - Found 2713 URLs in queue
+2026-01-20 17:25:53,738 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.aau.dk (last crawled 1.4s ago)
+2026-01-20 17:25:53,740 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 2712 remaining
+2026-01-20 17:25:53,741 - root - INFO - <module>:132 - Processing URL: https://www.aau.dk/esbjerg/uddannelser/bachelor
+2026-01-20 17:25:53,741 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.aau.dk/esbjerg/uddannelser/bachelor
+2026-01-20 17:25:53,742 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.aau.dk:443
+2026-01-20 17:25:53,870 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.aau.dk:443 "GET /esbjerg/uddannelser/bachelor HTTP/1.1" 200 None
+2026-01-20 17:25:53,888 - root - DEBUG - <module>:150 - Successfully fetched https://www.aau.dk/esbjerg/uddannelser/bachelor (246292 bytes)
+2026-01-20 17:25:53,898 - root - ERROR - <module>:185 - Unexpected error crawling https://www.aau.dk/esbjerg/uddannelser/bachelor: [WinError 3] The system cannot find the path specified: '../data/processed'
+2026-01-20 17:25:53,899 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:25:53,906 - root - DEBUG - grab_next_url:25 - Loaded timing data for 116 domains
+2026-01-20 17:25:53,907 - root - DEBUG - grab_next_url:37 - Found 2712 URLs in queue
+2026-01-20 17:25:53,907 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.2s since last crawl
+2026-01-20 17:25:53,907 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.2s since last crawl
+2026-01-20 17:25:53,907 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.2s since last crawl
+2026-01-20 17:25:53,907 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.studerende.aau.dk (last crawled 2.4s ago)
+2026-01-20 17:25:53,909 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 2711 remaining
+2026-01-20 17:25:53,910 - root - INFO - <module>:132 - Processing URL: https://www.studerende.aau.dk/regler-og-praktisk/undervisning/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/ledelse-informatik-i-byggeriet
+2026-01-20 17:25:53,910 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.studerende.aau.dk/regler-og-praktisk/undervisning/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/ledelse-informatik-i-byggeriet
+2026-01-20 17:25:53,911 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.studerende.aau.dk:443
+2026-01-20 17:25:54,290 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.studerende.aau.dk:443 "GET /regler-og-praktisk/undervisning/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/ledelse-informatik-i-byggeriet HTTP/1.1" 307 None
+2026-01-20 17:25:54,331 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.studerende.aau.dk:443 "GET /regler-og-praktisk/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/ledelse-informatik-i-byggeriet HTTP/1.1" 200 None
+2026-01-20 17:25:54,349 - root - DEBUG - <module>:150 - Successfully fetched https://www.studerende.aau.dk/regler-og-praktisk/undervisning/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/ledelse-informatik-i-byggeriet (219908 bytes)
+2026-01-20 17:25:54,360 - root - ERROR - <module>:185 - Unexpected error crawling https://www.studerende.aau.dk/regler-og-praktisk/undervisning/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/ledelse-informatik-i-byggeriet: [WinError 3] The system cannot find the path specified: '../data/processed'
+2026-01-20 17:25:54,360 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:25:54,361 - root - DEBUG - grab_next_url:25 - Loaded timing data for 116 domains
+2026-01-20 17:25:54,361 - root - DEBUG - grab_next_url:37 - Found 2711 URLs in queue
+2026-01-20 17:25:54,362 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.6s since last crawl
+2026-01-20 17:25:54,362 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.6s since last crawl
+2026-01-20 17:25:54,362 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.6s since last crawl
+2026-01-20 17:25:54,362 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.sammenommissioner.aau.dk (last crawled 2.4s ago)
+2026-01-20 17:25:54,364 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 2710 remaining
+2026-01-20 17:25:54,365 - root - INFO - <module>:132 - Processing URL: https://www.sammenommissioner.aau.dk/aau-s-faelles-missioner-godkendt-af-bestyrelsen-n71029
+2026-01-20 17:25:54,365 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.sammenommissioner.aau.dk/aau-s-faelles-missioner-godkendt-af-bestyrelsen-n71029
+2026-01-20 17:25:54,366 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.sammenommissioner.aau.dk:443
+2026-01-20 17:25:54,424 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.sammenommissioner.aau.dk:443 "GET /aau-s-faelles-missioner-godkendt-af-bestyrelsen-n71029 HTTP/1.1" 301 17
+2026-01-20 17:25:54,425 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.missioner.aau.dk:443
+2026-01-20 17:25:54,606 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.missioner.aau.dk:443 "GET /aau-s-faelles-missioner-godkendt-af-bestyrelsen-n71029 HTTP/1.1" 200 None
+2026-01-20 17:25:54,607 - root - DEBUG - <module>:150 - Successfully fetched https://www.sammenommissioner.aau.dk/aau-s-faelles-missioner-godkendt-af-bestyrelsen-n71029 (122383 bytes)
+2026-01-20 17:25:54,613 - root - ERROR - <module>:185 - Unexpected error crawling https://www.sammenommissioner.aau.dk/aau-s-faelles-missioner-godkendt-af-bestyrelsen-n71029: [WinError 3] The system cannot find the path specified: '../data/processed'
+2026-01-20 17:25:54,613 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:25:54,613 - root - DEBUG - grab_next_url:25 - Loaded timing data for 116 domains
+2026-01-20 17:25:54,614 - root - DEBUG - grab_next_url:37 - Found 2710 URLs in queue
+2026-01-20 17:25:54,614 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.9s since last crawl
+2026-01-20 17:25:54,614 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.9s since last crawl
+2026-01-20 17:25:54,614 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.9s since last crawl
+2026-01-20 17:25:54,615 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.en.aau.dk (last crawled 2.4s ago)
+2026-01-20 17:25:54,617 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 2709 remaining
+2026-01-20 17:25:54,617 - root - INFO - <module>:132 - Processing URL: https://www.en.aau.dk/about-aau/profile/sustainability/education
+2026-01-20 17:25:54,617 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.en.aau.dk/about-aau/profile/sustainability/education
+2026-01-20 17:25:54,618 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.en.aau.dk:443
+2026-01-20 17:25:54,737 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.en.aau.dk:443 "GET /about-aau/profile/sustainability/education HTTP/1.1" 200 None
+2026-01-20 17:25:54,738 - root - DEBUG - <module>:150 - Successfully fetched https://www.en.aau.dk/about-aau/profile/sustainability/education (178349 bytes)
+2026-01-20 17:25:54,745 - root - ERROR - <module>:185 - Unexpected error crawling https://www.en.aau.dk/about-aau/profile/sustainability/education: [WinError 3] The system cannot find the path specified: '../data/processed'
+2026-01-20 17:25:54,745 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:25:54,746 - root - DEBUG - grab_next_url:25 - Loaded timing data for 116 domains
+2026-01-20 17:25:54,770 - root - DEBUG - grab_next_url:37 - Found 2709 URLs in queue
+2026-01-20 17:25:54,771 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.aau.dk (last crawled 1.0s ago)
+2026-01-20 17:25:54,773 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 2708 remaining
+2026-01-20 17:25:54,773 - root - INFO - <module>:132 - Processing URL: https://www.aau.dk/esbjerg/uddannelser/kandidat
+2026-01-20 17:25:54,773 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.aau.dk/esbjerg/uddannelser/kandidat
+2026-01-20 17:25:54,774 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.aau.dk:443
+2026-01-20 17:25:54,915 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.aau.dk:443 "GET /esbjerg/uddannelser/kandidat HTTP/1.1" 200 None
+2026-01-20 17:25:54,932 - root - DEBUG - <module>:150 - Successfully fetched https://www.aau.dk/esbjerg/uddannelser/kandidat (244048 bytes)
+2026-01-20 17:25:54,940 - root - ERROR - <module>:185 - Unexpected error crawling https://www.aau.dk/esbjerg/uddannelser/kandidat: [WinError 3] The system cannot find the path specified: '../data/processed'
+2026-01-20 17:25:54,940 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:25:54,941 - root - DEBUG - grab_next_url:25 - Loaded timing data for 116 domains
+2026-01-20 17:25:54,942 - root - DEBUG - grab_next_url:37 - Found 2708 URLs in queue
+2026-01-20 17:25:54,942 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.2s since last crawl
+2026-01-20 17:25:54,942 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.2s since last crawl
+2026-01-20 17:25:54,942 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.2s since last crawl
+2026-01-20 17:25:54,942 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.studerende.aau.dk (last crawled 1.0s ago)
+2026-01-20 17:25:54,944 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 2707 remaining
+2026-01-20 17:25:54,945 - root - INFO - <module>:132 - Processing URL: https://www.studerende.aau.dk/regler-og-praktisk/undervisning/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/materials-and-nanotechnology-civilingenior
+2026-01-20 17:25:54,945 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.studerende.aau.dk/regler-og-praktisk/undervisning/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/materials-and-nanotechnology-civilingenior
+2026-01-20 17:25:54,945 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.studerende.aau.dk:443
+2026-01-20 17:25:55,381 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.studerende.aau.dk:443 "GET /regler-og-praktisk/undervisning/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/materials-and-nanotechnology-civilingenior HTTP/1.1" 307 None
+2026-01-20 17:25:55,425 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.studerende.aau.dk:443 "GET /regler-og-praktisk/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/materials-and-nanotechnology-civilingenior HTTP/1.1" 200 None
+2026-01-20 17:25:55,443 - root - DEBUG - <module>:150 - Successfully fetched https://www.studerende.aau.dk/regler-og-praktisk/undervisning/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/materials-and-nanotechnology-civilingenior (185778 bytes)
+2026-01-20 17:25:55,451 - root - ERROR - <module>:185 - Unexpected error crawling https://www.studerende.aau.dk/regler-og-praktisk/undervisning/aendringer-i-uddannelser/uddannelser-der-lukker-for-optag/materials-and-nanotechnology-civilingenior: [WinError 3] The system cannot find the path specified: '../data/processed'
+2026-01-20 17:25:55,451 - root - DEBUG - grab_next_url:18 - Loading domain timing data
+2026-01-20 17:25:55,451 - root - DEBUG - grab_next_url:25 - Loaded timing data for 116 domains
+2026-01-20 17:25:55,453 - root - DEBUG - grab_next_url:37 - Found 2707 URLs in queue
+2026-01-20 17:25:55,453 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.7s since last crawl
+2026-01-20 17:25:55,453 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.7s since last crawl
+2026-01-20 17:25:55,453 - root - DEBUG - grab_next_url:57 - Rate limiting www.aau.dk: only 0.7s since last crawl
+2026-01-20 17:25:55,453 - root - DEBUG - grab_next_url:52 - Selected URL from domain www.aaudxp-cms.aau.dk (last crawled 2.9s ago)
+2026-01-20 17:25:55,455 - root - DEBUG - grab_next_url:66 - Removed URL from queue, 2706 remaining
+2026-01-20 17:25:55,456 - root - INFO - <module>:132 - Processing URL: https://www.aaudxp-cms.aau.dk/media/3ryh3el0/aau-sdg-report-2021-v6.pdf
+2026-01-20 17:25:55,456 - root - DEBUG - <module>:143 - Making HTTP request to: https://www.aaudxp-cms.aau.dk/media/3ryh3el0/aau-sdg-report-2021-v6.pdf
+2026-01-20 17:25:55,456 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): www.aaudxp-cms.aau.dk:443
+2026-01-20 17:25:55,662 - urllib3.connectionpool - DEBUG - _make_request:544 - https://www.aaudxp-cms.aau.dk:443 "GET /media/3ryh3el0/aau-sdg-report-2021-v6.pdf HTTP/1.1" 200 31592758
+2026-01-20 17:25:56,153 - root - INFO - <module>:189 - Crawler stopped by user (Ctrl+C)

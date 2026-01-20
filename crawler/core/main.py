@@ -10,6 +10,7 @@ import time
 import logging
 import json
 
+
 # Add parent directory to path for imports
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 from logging_config import setup_logging
@@ -17,10 +18,10 @@ from logging_config import setup_logging
 # Set up logging - change log_level to 'DEBUG' for more detailed output
 logger = setup_logging(log_level='DEBUG', log_to_file=True, log_directory='logs')
 
-from utils import helper_functions as hf
-
 # Cache robot parsers per domain
 robot_parsers = {}
+
+from utils import helper_functions as hf 
 
 
 def can_fetch(url, user_agent='*'):
@@ -151,7 +152,8 @@ while True:
             parsed_html = bs(raw_html.content, 'html.parser')
 
             # Save page content as JSON
-            save_page_json(url, parsed_html, processed_dir)
+            if hf.should_save(parsed_html.get_text(separator=' ', strip=True),processed_dir):
+                save_page_json(url, parsed_html, processed_dir)
 
             # Extract links for further crawling
             links = []
