@@ -16,7 +16,7 @@ def grab_next_url():
     domain_times = {}
     if os.path.exists(DOMAIN_TIMING_FILE):
         logging.debug("Loading domain timing data")
-        with open(DOMAIN_TIMING_FILE, 'r') as f:
+        with open(DOMAIN_TIMING_FILE, 'r', encoding='utf-8', errors='replace') as f:
             for line in f:
                 line = line.strip()
                 if line:
@@ -31,7 +31,7 @@ def grab_next_url():
         logging.warning(f"To crawl file not found: {TO_CRAWL_FILE}")
         return None
 
-    with open(TO_CRAWL_FILE, 'r') as f:
+    with open(TO_CRAWL_FILE, 'r', encoding='utf-8', errors='replace') as f:
         urls = [line.strip() for line in f if line.strip()]
 
     logging.debug(f"Found {len(urls)} URLs in queue")
@@ -59,7 +59,7 @@ def grab_next_url():
     if selected_url:
         # Remove selected URL from to_crawl
         urls.remove(selected_url)
-        with open(TO_CRAWL_FILE, 'w') as f:
+        with open(TO_CRAWL_FILE, 'w', encoding='utf-8', errors='replace') as f:
             for url in urls:
                 f.write(url + '\n')
 
@@ -68,12 +68,12 @@ def grab_next_url():
         # Update domain timing
         domain = urlparse(selected_url).netloc
         domain_times[domain] = current_time
-        with open(DOMAIN_TIMING_FILE, 'w') as f:
+        with open(DOMAIN_TIMING_FILE, 'w', encoding='utf-8', errors='replace') as f:
             for d, t in domain_times.items():
                 f.write(f"{d}\t{t}\n")
 
         # Append to crawled file
-        with open(CRAWLED_FILE, 'a') as f:
+        with open(CRAWLED_FILE, 'a', encoding='utf-8', errors='replace') as f:
             f.write(selected_url + "\n")
 
         return selected_url
@@ -103,12 +103,12 @@ def save_new_urls(links):
     # TODO: Consider using database instead of files for better performance
     to_crawl = set()
     if os.path.exists(TO_CRAWL_FILE):
-        with open(TO_CRAWL_FILE, 'r') as f:
+        with open(TO_CRAWL_FILE, 'r', encoding='utf-8', errors='replace') as f:
             to_crawl = set(_normalize(line.strip()) for line in f if line.strip())
 
     crawled = set()
     if os.path.exists(CRAWLED_FILE):
-        with open(CRAWLED_FILE, 'r') as f:
+        with open(CRAWLED_FILE, 'r', encoding='utf-8', errors='replace') as f:
             crawled = set(_normalize(line.strip()) for line in f if line.strip())
 
     logging.debug(f"Found {len(to_crawl)} URLs to crawl, {len(crawled)} already crawled")
@@ -127,7 +127,7 @@ def save_new_urls(links):
 
     # Append only new URLs to file
     if new_urls:
-        with open(TO_CRAWL_FILE, 'a') as f:
+        with open(TO_CRAWL_FILE, 'a', encoding='utf-8', errors='replace') as f:
             for url in new_urls:
                 f.write(url + '\n')
         logging.info(f"Added {len(new_urls)} new URLs to queue")

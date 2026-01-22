@@ -32,12 +32,22 @@ def can_fetch(url, user_agent='*'):
     # Get or create parser for this domain
     if domain not in robot_parsers:
         rp = RobotFileParser()
-        rp.set_url(urljoin(domain, '/robots.txt'))
+        robots_url = urljoin(domain, '/robots.txt')
+        rp.set_url(robots_url)
         try:
             logging.debug(f"Reading robots.txt for domain: {domain}")
-            rp.read()
-            robot_parsers[domain] = rp
-            logging.debug(f"Successfully loaded robots.txt for {domain}")
+            # Fetch robots.txt with timeout using requests
+            response = requests.get(robots_url, timeout=2)
+            if response.status_code == 200:
+                rp.parse(response.text.splitlines())
+                robot_parsers[domain] = rp
+                logging.debug(f"Successfully loaded robots.txt for {domain}")
+            else:
+                logging.debug(f"robots.txt returned {response.status_code} for {domain}, assuming crawl allowed")
+                robot_parsers[domain] = None
+        except requests.exceptions.Timeout:
+            logging.warning(f"Timeout reading robots.txt for {domain} (2s), assuming crawl allowed")
+            robot_parsers[domain] = None
         except Exception as e:
             # If we can't read robots.txt, assume we can crawl
             logging.warning(f"Could not read robots.txt for {domain}: {e}")
@@ -84,7 +94,7 @@ if not os.path.exists(crawled_file):
 
 # Log initial queue status
 try:
-    with open(to_crawl_file, 'r') as f:
+    with open(to_crawl_file, 'r', encoding='utf-8', errors='replace') as f:
         initial_queue_size = len([line for line in f if line.strip()])
     logging.info(f"Starting with {initial_queue_size} URLs in queue")
 except Exception as e:
@@ -137,14 +147,40 @@ while True:
             logging.warning(f"Skipping invalid URL scheme: {url}")
             continue
 
-        # TODO: Add URL filtering (e.g., file extensions, patterns to avoid)
+        # Skip binary/non-HTML file extensions
+        skip_extensions = ['.pdf', '.jpg', '.jpeg', '.png', '.gif', '.zip', '.mp4', 
+                          '.mp3', '.avi', '.exe', '.doc', '.docx', '.xls', '.xlsx', 
+                          '.ppt', '.pptx', '.rar', '.tar', '.gz', '.ico', '.svg', '.webp']
+        path_lower = parsed.path.lower()
+        if any(path_lower.endswith(ext) for ext in skip_extensions):
+            logging.debug(f"Skipping binary file: {url}")
+            continue
 
         try:
             logging.debug(f"Making HTTP request to: {url}")
+            # Use HEAD request first to check Content-Type
+            try:
+                head_response = requests.head(url, timeout=2, allow_redirects=True)
+                content_type = head_response.headers.get('Content-Type', '').lower()
+                
+                # Skip if not HTML content
+                if content_type and 'text/html' not in content_type:
+                    logging.debug(f"Skipping non-HTML content ({content_type}): {url}")
+                    continue
+            except:
+                # If HEAD fails, proceed with GET (some servers don't support HEAD)
+                pass
+            
             raw_html = requests.get(url, timeout=10)
 
             if raw_html.status_code != 200:
                 logging.warning(f"HTTP {raw_html.status_code} for {url}")
+                continue
+
+            # Double-check content type after GET
+            content_type = raw_html.headers.get('Content-Type', '').lower()
+            if 'text/html' not in content_type:
+                logging.debug(f"Skipping non-HTML response ({content_type}): {url}")
                 continue
 
             logging.debug(f"Successfully fetched {url} ({len(raw_html.content)} bytes)")
